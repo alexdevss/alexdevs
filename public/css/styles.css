@@ -5,8 +5,19 @@
     font-style: normal;
 }
 body{
-    /* background: linear-gradient(180deg, #ffcc33, #fff); */
     font-family: 'Nunito', sans-serif;
+}
+
+body::after{
+    content: "";
+    background-image: url("../img/fondo_con_cosas.svg");
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
 }
 
 .container {
@@ -25,4 +36,35 @@ h1{
     font-family: "Blogger";
     color: #272727;
     font-size: 50px;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+-- --  -- -- -- -- -- -- -- Responsive  -- -- -- -- -- -- -- -- -- -- -- -- 
+-- --  -- -- -- -- -- -- -- -- -- -- --  -- -- -- -- -- -- -- -- -- -- --*/
+
+
+@media (max-height: 768px){ /* heigth laptop */
+
+}
+
+
+
+
+@media (max-width: 1200px){ /* normal screen and tablets */
+
+
+}
+
+@media (max-width: 992px){ /* vertical tablets */
+
+
+}
+
+@media (max-width: 767px){ /* phones */
+    h1{
+        font-size: 18px;
+    }
+    .brand{
+        width: 50vw;
+    }
 }
