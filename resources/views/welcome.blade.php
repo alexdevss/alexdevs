@@ -23,7 +23,7 @@
     <div class="container">
         <div class="d-flex flex-column justify-content-center align-items-center wow fadeInUp">
             <h1>Estamos trabajando para ofrecerte lo mejor</h1>
-            <img src="{{asset('img/rounded_brand.svg')}}" alt="" class="fluid-img mt-5 brand wow rollIn"
+            <img src="{{asset('img/rounded_brand.png')}}" alt="" class="fluid-img mt-5 brand wow rollIn"
                 data-wow-delay="0.5s">
         </div>
     </div>
