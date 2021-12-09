@@ -1,43 +1,147 @@
+/* SETTINGS STYLES */
 @font-face {
     font-family: Blogger;
-    src: url('../fonts/Blogger_Sans-Medium.otf');
+    src: url('../fonts/Blogger_Sans.otf');
     font-weight: normal;
     font-style: normal;
 }
-body{
-    font-family: 'Nunito', sans-serif;
-}
 
-body::after{
-    content: "";
-    background-image: url("../img/fondo_con_cosas.svg");
-    opacity: 0.2;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;  
-}
-
-.container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.brand {
-    width: 20vw;
-}
-
-h1{
-    font-family: "Blogger";
+p, h1, h2, h3, h4, h5, h6, span, a{
+    font-family: 'Blogger';
     color: #272727;
-    font-size: 50px;
 }
 
+.animation {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+
+
+
+a:hover{
+    transform: scale(1.1);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* WELCOME STYLES */
+
+#welcome main{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#welcome main:before{
+    content: "";
+    background-image: url("/img/index_background.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.3;
+    z-index: -1;
+    width: 100%;
+}
+
+#welcome .filter{
+    background: rgb(255,204,102);
+    background: linear-gradient(90deg, rgba(255,204,102,0.4) 0%, rgba(255,255,255,0.5) 71%);
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+#welcome .container {
+    z-index: 1;
+    position: relative;
+}
+#welcome .big-title{
+    font-size: 250px;
+    font-weight: bold;
+    color: #ffcc66;
+    text-shadow: 0px 3px 5.81px rgba(0, 0, 0, 0.2);
+}
+#welcome .cursor{
+    font-size: 90px;
+}
+#welcome .sub-title{
+    font-size: 60px;
+    font-weight: bold;
+    color:#333;
+    text-shadow: 0px 3px 5.81px rgba(0, 0, 0, 0.2);
+}
+
+#welcome .question{
+    font-size: 48px;
+    font-weight: normal;
+}
+
+#welcome .target{
+    background-color: #fff;
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+}
+
+.target .target-title{
+    font-size: 40px;
+}
+
+.target .target-text{
+    font-size: 18px;
+    max-width: 70%;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.target .target-text span{
+    font-weight: bold;
+}
+
+.target-button {
+    background-color: #ffcc66;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#welcome .social-media{
+    max-width: 30%;
+    position: absolute;
+    left: calc(0% - 20%);
+    top: calc(0% + 60%);
+}
+
+#welcome .social-network{
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.2);
+}
+
+#welcome .social-network img{
+    width: 25px;
+}
+#welcome .social-network p{
+    font-size: 20px;
+    font-weight: bold;
+}
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 -- --  -- -- -- -- -- -- -- Responsive  -- -- -- -- -- -- -- -- -- -- -- -- 
 -- --  -- -- -- -- -- -- -- -- -- -- --  -- -- -- -- -- -- -- -- -- -- --*/
@@ -45,26 +149,157 @@ h1{
 
 @media (max-height: 768px){ /* heigth laptop */
 
+    #welcome .big-title{
+        font-size: 200px;
+    }
+
+    #welcome .sub-title{
+        font-size: 50px;
+    }
+
+    #welcome .question{
+        font-size: 38px;
+    }
+
+    #welcome .social-media{
+        left: calc(0% - 5%);
+    }
+
+    #welcome .target{
+        padding: 0.5rem !important;
+    }
+
+    #welcome .target-title{
+        font-size: 35px;
+    }
+
+    #welcome .target-button{
+        font-size: 20px;
+        margin: 1rem !important;
+    }
+}
+
+@media (max-width: 1400px){ /* big laptop */
+
+    #welcome .big-title{
+        font-size: 150px;
+    }
+    
+    #welcome .sub-title{
+        font-size: 35px;
+    }
+    
+    #welcome .question{
+        font-size: 35px;
+    }
+    
+    #welcome .social-media{
+        left: calc(0%);
+    }
+    
+    #welcome .social-network p{
+        font-size: 18px;
+    }
+    
+    #welcome .target{
+        padding: 0.5rem !important;
+    }
+    
+    #welcome .target-title{
+        font-size: 35px;
+    }
+    
+    #welcome .target-button{
+        font-size: 20px;
+        margin: 0.5rem !important;
+    }
 }
 
 
+@media (max-width: 1200px){ /* normal laptop screen and tablets */
 
+    #welcome .big-title{
+        font-size: 170px;
+    }
 
-@media (max-width: 1200px){ /* normal screen and tablets */
+    #welcome .sub-title{
+        font-size: 40px;
+    }
 
+    #welcome .question{
+        font-size: 38px;
+    }
+
+    #welcome .social-media{
+        left: calc(0%);
+    }
+
+    #welcome .social-network p{
+        font-size: 18px;
+    }
+
+    #welcome .target{
+        padding: 0.5rem !important;
+    }
+
+    #welcome .target-title{
+        font-size: 35px;
+    }
+
+    #welcome .target-button{
+        font-size: 20px;
+        margin: 1rem !important;
+    }
 
 }
 
 @media (max-width: 992px){ /* vertical tablets */
-
-
+    #welcome .big-title{
+        font-size: 150px;
+    }
+    #welcome .sub-title{
+        font-size: 35px;
+    }
+    #welcome .question{
+        font-size: 30px;
+    }
+    .social-media{
+        display: none !important;
+    }
 }
 
 @media (max-width: 767px){ /* phones */
-    h1{
-        font-size: 18px;
+    #welcome .big-title{
+        font-size: 65px;
     }
-    .brand{
-        width: 50vw;
+    
+    #welcome .sub-title{
+        font-size: 20px;
+    }
+
+    #welcome .target{
+        display: block !important;
+        top: 0;
+        left: 0;
+        height: 50px;
+        overflow: hidden;
+    }
+
+    #welcome .target-title{
+        font-size: 23px;
+    }
+
+    #welcome .target-text{
+        font-size: 16px;
+    }
+
+    #welcome .target-button{
+        font-size: 18px;
+        margin: 0.5rem !important;
+    }
+
+    #welcome .mobile-brand img{
+        height: 230px;
+        width: auto;
     }
 }
