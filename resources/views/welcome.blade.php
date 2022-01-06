@@ -46,7 +46,8 @@
                 </a>
             </div>
             <div class="mobile-brand d-sm-none d-flex justify-content-center align-items-center">
-                <img src="{{asset('img/LOGO_REDONDO.png')}}" alt="" class="img-fluid wow rollIn" data-wow-delay="0.5s">
+                <img src="{{asset('img/positive_rounded_brand.png')}}" alt="" class="img-fluid wow rollIn"
+                    data-wow-delay="0.5s">
             </div>
             <h1 class="mb-0 big-title text-center mb-sm-0 mb-3 wow fadeInDown d-sm-block d-none">alexdevs</h1>
 
