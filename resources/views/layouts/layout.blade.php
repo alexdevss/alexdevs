@@ -30,12 +30,13 @@
                     <a class="d-none btn-logo ml-3" href="/">
                         <img src="{{asset('img/svg/LOGO_REDONDO_SIN_SOMBRA.svg')}}" alt="">
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
-                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-action="open">
                         <img src="{{asset('img/hamburger.png')}}" alt="" class="burger-menu">
                     </button>
-                    <div class="w-100 collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav d-flex justify-content-evenly align-items-center m-auto w-100">
+                    <div class="w-100 navbar-collapse animation">
+                        <img src="{{asset('img/svg/curve-banner.svg')}}" alt="" class="navbar-semicircle">
+                        <ul
+                            class="navbar-nav d-lg-flex d-none justify-content-evenly align-items-center m-auto w-100 animation">
                             <li class="nav-item ml-3">
                                 <a class="nav-link animation" data-reference="services" href="/services">Servicios</a>
                             </li>
@@ -57,7 +58,7 @@
     @yield('main')
     <footer id="footer">
         <div class="footer wow fadeInUpBig" data-wow-duration="1s">
-            <img src="{{asset('img/svg/curve-banner.svg')}}" alt="" class="img-fluid footer-semicircle">
+            <img src="{{asset('img/svg/curve-banner.svg')}}" alt="" class="footer-semicircle">
             <div class="container big-container">
                 <div
                     class="d-flex flex-lg-row flex-column justify-content-lg-evenly justify-content-evenly align-items-lg-start align-items-center footer-box">

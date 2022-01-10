@@ -53,8 +53,6 @@
 
             <h3 class="sub-title text-center wow fadeInDown" data-wow-delay="0.3s">
                 PAGINAS PARA DESPEGAR
-                {{-- <span class="typer" id="main" data-words="PAGINAS PARA DESPEGAR" data-delay="100" data-loop="false"
-                    data-colors="#272727"></span> --}}
             </h3>
         </div>
         <div class="container">
