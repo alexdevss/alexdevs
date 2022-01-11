@@ -55,7 +55,9 @@
             </div>
         </div>
     </header>
-    @yield('main')
+    <main id="@yield('view')">
+        @yield('main')
+    </main>
     <footer id="footer">
         <div class="footer wow fadeInUpBig" data-wow-duration="1s">
             <img src="{{asset('img/svg/curve-banner.svg')}}" alt="" class="footer-semicircle">
