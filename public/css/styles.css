@@ -20,7 +20,9 @@
     src: url('../fonts/Blogger_Sans-Medium.otf');
     font-style: normal;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -52,19 +54,18 @@
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Blogger-bold';
-    color: #272727 !important;
+    color: #272727;
 }
 
 p, a, label {
     font-family: 'Blogger-light';
-    color: #272727 !important;
+    color: #272727;
     font-size: 24px !important;
 }
-input, textarea{
-    background-color: #999 !important;
+input{
+    background-color: #999;
     color: #fff !important;
     border: 0px !important;
-    background-clip: none !important;
 }
 textarea{
     width: 100%;
@@ -72,7 +73,9 @@ textarea{
     background-color: #999 !important;
     color: #fff !important;
     border: 0px !important;
-    background-clip: none !important;
+}
+textarea::placeholder {
+    font-size: 16px;
 }
 textarea:focus-visible{
     outline: 0px !important;
@@ -100,13 +103,11 @@ input[type="checkbox"]:checked{
     color: #fff !important;
     font-size: 18px;    
 }
-.form-control, textarea{
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+
+li p{
+    font-size: 20px !important;
 }
+
 .form-control:focus, textarea:focus{
     background-color: #575757 !important;
     box-shadow: 0 0 0 0.2rem #ffcc6675 !important
@@ -275,8 +276,9 @@ a:hover{
 /* LAYOUT HEADER STYLES */
 body{
     position: relative;
+    background-color: rgb(240, 240, 240);
 }
-body:before{
+/* body:before{
     content: "";
     background-image: url("/img/background_things.png");
     background-size: cover;
@@ -291,7 +293,7 @@ body:before{
     opacity: 0.3;
     z-index: -1;
     height: 100%;
-}
+} */
 
 #layout .navbar-father{
     width: 100%;
@@ -534,6 +536,24 @@ header{
 #services .callToAction p{
     font-size: 24px;
 }
+
+/* CONTACT STYLES */
+
+/* PROJECTS STYLES */
+
+#projects .banner{
+    position: relative;
+    height: 500px;
+    background-image: url("/img/startup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+    overflow: hidden;
+}
+#projects .banner h1{
+    color: #fff;
+}
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 -- --  -- -- -- -- -- -- -- Responsive  -- -- -- -- -- -- -- -- -- -- -- -- 
 -- --  -- -- -- -- -- -- -- -- -- -- --  -- -- -- -- -- -- -- -- -- -- --*/
@@ -638,6 +658,10 @@ header{
         height: 500px;
     }
 
+    /* CONTACT STYLES */
+    #layout main#contact{
+        margin-top: calc(0% + 140px);
+    }
 }
 @media (max-width: 1400px) and (max-height:769px){
     #services .value img{
@@ -787,7 +811,6 @@ header{
     #layout .interactive-logo {
         height: 150px;
     }
-
     #layout main{
         margin-top: calc(0% + 120px);
     }
@@ -1019,5 +1042,20 @@ header{
     }
     #services .banner, #services .banner-2{
         height: 370px;
+    }
+
+    /* CONTACT STYLES */
+    #layout main#contact{
+        margin-top: calc(0% + 60px);
+    }
+
+    #contact label{
+        text-align: left !important;
+    }
+    /* PROJECTS STYLES */
+
+    li p{
+        font-size: 16px !important;
+        text-align: left !important;
     }
 }
