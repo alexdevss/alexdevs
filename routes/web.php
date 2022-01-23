@@ -1,5 +1,9 @@
 <?php
 
+use App\Mail\ContactMailable;
+use Illuminate\Http\Client\Request;
+use Illuminate\Http\Request as HttpRequest;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,4 +35,17 @@ Route::get('/about', function () {
 
 Route::get('/contact', function () {
     return view('contact');
+});
+
+Route::post('/sendEmail', function (HttpRequest $request) {
+    $data = array(
+        'name' => $request->name,
+        'last_names' => $request->last_name,
+        'mail'=> $request->email,
+        'message'=> $request->description,
+        'phone' => $request->phone
+    );
+    Mail::to('hola@alexdevs.es')->send(new ContactMailable);
+
+    return "Mensaje enviado";
 });

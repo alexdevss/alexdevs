@@ -1,14 +1,20 @@
 $(document).ready(function(){
     new WOW().init();
-    navbarAnimation();
-    setTimeout(() => {
-        navbarOccurs()
-    }, 1000);
-    if($(document).width() < 768){
-        showWelcomeMenus();
-    }
     if($(document).width() <= 820){
+        showWelcomeMenus();
         mobileNavbar();
+    } else {
+        navbarAnimation();
+        setTimeout(() => {
+            navbarOccurs()
+        }, 1000);
+
+    }
+
+    if(window.location.href.includes("contact")){
+        $("#contactBtn").on("click", function(){
+            $("#contactForm").submit();
+        })
     }
 })
 
@@ -17,10 +23,8 @@ function showWelcomeMenus(){
     menus.each((i, menu) => {
         menu = $(menu);
         menu.on("click", function(){
-            console.log(menu.height())
-            if(menu.height() == 34){
-                console.log("here")
-                menu.height("calc(100%)");
+            if(menu.height() <= 50){
+                menu.height("calc(50px + 130px)");
             } else {
                 menu.height("34");
             }
@@ -50,13 +54,27 @@ function navbarAnimation(){
         }
     });
 }
-function navbarOccurs(){
-    $(".navbar").css({
-        "transform": "translateX(calc(0%))"
-    })
+function navbarOccurs(type = false){
+    if(type){
+        $(".navbar").css({
+            "transform": "translateY(calc(0%))"
+        })
+    }else{
+        $(".navbar").css({
+            "transform": "translateX(calc(0%))"
+        })
+
+    }
 }
 
 function mobileNavbar(){
+    $("#layout nav.navbar").css({
+        "transform": "translateY(calc(0% - 1500px)) translateX(calc(0%))"
+    })
+    setTimeout(() => {
+        navbarOccurs(true)
+    }, 500);
+
     $(".navbar-toggler").on("click", function(e){
         let action = $(this).attr("data-action");
         if(action == "open"){            

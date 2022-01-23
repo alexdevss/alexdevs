@@ -4,11 +4,11 @@
 @section('main')
 <div class="container">
     <div class="projects">
-        <div class="white-box shadow-lg p-lg-5 py-5 project">
+        <div class="white-box shadow-lg p-lg-5 py-5 project wow fadeInDown" data-wow-delay="1.5s">
             <h1 class="text-center mb-5">AUTOS ROSO</h1>
             <div class="row m-3">
                 <div class="col-lg-6 col-12">
-                    <p class="mb-5">
+                    <p class="mb-sm-3 mb-5">
                         <span>Autos Roso</span> es una empresa de compra y venta de vehículos con sede
                         en diferentes islas del archipiélago Canario.
                         Este fue mi primer trabajo publicado y se dio a través de
@@ -33,8 +33,8 @@
                     <img src="{{asset('img/ar.png')}}" class="img-fluid">
                 </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <a href="https://autosroso.com/" class="button rounded-pill px-5 py-2 mt-4 animation" target="_blank">
+            <div class="d-flex justify-content-center align-items-center mt-lg-3 mt-5">
+                <a href="https://autosroso.com/" class="button rounded-pill px-5 py-2 animation" target="_blank">
                     Ver Autos Roso
                 </a>
             </div>
@@ -45,8 +45,10 @@
 <div class="d-100"></div>
 <div class="banner mt-5  d-flex flex-column justify-content-center align-items-start">
     <div class="filter"></div>
-    <h1 class="wow fadeInDown text-center w-100 mb-5">¿A QUÉ ESPERAS PARA SER EL SIGUIENTE?</h1>
-    <div class="d-flex justify-content-center align-items-center w-100 mt-5">
+    <h1 class="text-center w-100 mb-5 wow fadeInDown">¿A QUÉ ESPERAS PARA SER EL SIGUIENTE?</h1>
+    <p class="text-center w-100 wow fadeInDown" data-wow-delay=".5s">Cuéntame tu idea</p>
+    <div class="d-flex justify-content-center align-items-center w-100 mt-5 wow fadeInDown button-father"
+        data-wow-delay=".8s">
         <a href="/contact" class="button rounded-pill px-5 py-2 mt-4 animation">
             CONTACTA YA
         </a>

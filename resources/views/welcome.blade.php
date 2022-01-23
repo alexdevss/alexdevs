@@ -61,16 +61,15 @@
                 </p>
                 <div class="row row-eq-height animation">
                     <div class="col-12 col-lg-4 mb-lg-0 mb-3">
-                        <div class="target shadow p-3 d-flex justify-content-center align-items-center flex-column animation wow fadeInDown"
+                        <div class="target shadow p-3 d-flex justify-content-between align-items-center flex-column animation wow fadeInDown"
                             data-wow-delay="1s">
                             <p class="target-title text-center mb-0">Servicios</p>
-                            <div
-                                class="target-text-father d-flex flex-column justify-content-center align-items-center animation">
-                                <p class="target-text text-center">
-                                    <span>Explora</span> las diferentes soluciones
-                                    tecnológicas y escoge la que más se
-                                    adapte a ti y a tu negocio
-                                </p>
+                            <p class="target-text text-center">
+                                <span>Explora</span> las diferentes soluciones
+                                tecnológicas y escoge la que más se
+                                adapte a ti y a tu negocio
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center">
                                 <a href="/services" class="target-button rounded-pill px-5 py-1 mt-4 animation">
                                     Ver servicios
                                 </a>
@@ -78,16 +77,15 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 mb-lg-0 mb-3">
-                        <div class="target shadow p-3 d-flex justify-content-center align-items-center flex-column animation wow fadeInDown"
+                        <div class="target shadow p-3 d-flex justify-content-between align-items-center flex-column animation wow fadeInDown"
                             data-wow-delay="1.3s">
                             <p class="target-title text-center mb-0">Contacto</p>
-                            <div
-                                class="target-text-father d-flex flex-column justify-content-center align-items-center animation">
-                                <p class="target-text text-center">
-                                    <span>Envíame</span> un correo electrónico
-                                    requiriendo la información que
-                                    necesites.
-                                </p>
+                            <p class="target-text text-center">
+                                <span>Envíame</span> un correo electrónico
+                                requiriendo la información que
+                                necesites.
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center">
                                 <a href="/contact" class="target-button rounded-pill px-5 py-1 mt-4 animation">
                                     Contactar
                                 </a>
@@ -95,16 +93,15 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 mb-lg-0 mb-3">
-                        <div class="target shadow p-3 d-flex justify-content-center align-items-center flex-column animation wow fadeInDown"
+                        <div class="target shadow p-3 d-flex justify-content-between align-items-lg-center flex-column animation wow fadeInDown"
                             data-wow-delay="1.6s">
                             <p class="target-title text-center mb-0">Sobre mí</p>
-                            <div
-                                class="target-text-father d-flex flex-column justify-content-center align-items-center animation">
-                                <p class="target-text text-center">
-                                    <span>Conóceme,</span> mi trayectoria
-                                    profesional y los trabajos
-                                    realizados
-                                </p>
+                            <p class="target-text text-center">
+                                <span>Conóceme,</span> mi trayectoria
+                                profesional y los trabajos
+                                realizados
+                            </p>
+                            <div class="d-flex justify-content-center align-items-center">
                                 <a href="/about" class="target-button rounded-pill px-5 py-1 mt-4 animation">
                                     Conóceme
                                 </a>
