@@ -11,11 +11,12 @@
                 <div class="col-lg-4 col-12 offset-lg-1">
                     <div class="form-group">
                         <label for="name">¿Cómo te llamas?</label>
-                        <input type="text" class="form-control rounded" id="name" placeholder="Ej: Peter">
+                        <input type="text" class="form-control rounded" id="name" name="name" placeholder="Ej: Peter">
                     </div>
                     <div class="form-group">
                         <label for="last_names">¿Cuáles son tus apellidos?</label>
-                        <input type="text" class="form-control rounded" id="last_name" placeholder="Ej: Parker">
+                        <input type="text" class="form-control rounded" id="last_name" name="last_names"
+                            placeholder="Ej: Parker">
                     </div>
                     <div class="form-group">
                         <label for="phone">¿Cuál es tu número de contacto?</label>

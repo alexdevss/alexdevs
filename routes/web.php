@@ -1,6 +1,7 @@
 <?php
 
 use App\Mail\ContactMailable;
+use App\Mail\NotifyMail;
 use Illuminate\Http\Client\Request;
 use Illuminate\Http\Request as HttpRequest;
 use Illuminate\Support\Facades\Mail;
@@ -38,14 +39,18 @@ Route::get('/contact', function () {
 });
 
 Route::post('/sendEmail', function (HttpRequest $request) {
-    $data = array(
+    $formData = array(
         'name' => $request->name,
-        'last_names' => $request->last_name,
+        'last_names' => $request->last_names,
         'mail'=> $request->email,
         'message'=> $request->description,
         'phone' => $request->phone
     );
-    Mail::to('hola@alexdevs.es')->send(new ContactMailable);
-
-    return "Mensaje enviado";
+    Mail::to($formData['mail'])->send(new NotifyMail());
+ 
+    if (Mail::failures()) {
+         return response()->Fail('Sorry! Please try again latter');
+    }else{
+         return response()->success('Great! Successfully send in your mail');
+    }
 });
