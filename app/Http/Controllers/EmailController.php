@@ -19,7 +19,7 @@ class EmailController extends Controller
             'message'=> $request->description,
             'phone' => $request->phone
         );
-        Mail::to($formData['mail'])->send(new NotifyMail());
+        Mail::to($formData['mail'])->send(new NotifyMail($formData));
      
         if (Mail::failures()) {
             $response['success'] = false;
