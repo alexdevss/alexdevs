@@ -10,13 +10,12 @@ use Illuminate\Support\Facades\Log;
 class EmailController extends Controller
 {
     function sendEmail (Request $request) {
-        Log::debug("AQUI");
-        Log::debug($request->_token);
+        Log::debug(gettype($request->description));
         $formData = array(
             'name' => $request->name,
             'last_names' => $request->last_names,
             'mail'=> $request->email,
-            'message'=> $request->description,
+            'description'=> $request->description,
             'phone' => $request->phone
         );
         Mail::to($formData['mail'])->send(new NotifyMail($formData));
