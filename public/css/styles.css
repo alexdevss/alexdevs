@@ -370,6 +370,8 @@ header{
     width: calc(100% + 10%);
     bottom: calc(100% - 10%);
     left: calc(0% - 5%);
+    -webkit-filter: drop-shadow(0px -12px 6px rgba(0, 0, 0, 0.194));
+    filter: drop-shadow(0px -12px 6px rgba(0, 0, 0, 0.194))
 }
 
 #footer .title{
@@ -751,7 +753,7 @@ header{
     /* LAYOUT STYLES */
 
     #footer .footer-semicircle {
-        bottom: calc(100% - 5.4%);
+        bottom: calc(100% - 5.5%);
     }
     
     /* SERVICES STYLES */
@@ -1051,6 +1053,8 @@ header{
     }
     .navbar-semicircle{
         display: block !important;
+        -webkit-filter: drop-shadow(0px -12px 6px rgba(0, 0, 0, 0.194));
+        filter: drop-shadow(0px -12px 6px rgba(0, 0, 0, 0.194));
         position: absolute;
         top: calc(100% - 5px);
         left: calc(0% - 4%);
