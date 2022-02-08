@@ -20,6 +20,9 @@
     src: url('../fonts/Blogger_Sans-Medium.otf');
     font-style: normal;
 }
+.wrapper{
+    overflow: hidden !important;
+}
 html {
     scroll-behavior: smooth;
   }
@@ -281,22 +284,6 @@ body{
     position: relative;
     background-color: rgb(240, 240, 240);
 }
-/* body:before{
-    content: "";
-    background-image: url("/img/background_things.png");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.3;
-    z-index: -1;
-    height: 100%;
-} */
 
 #layout .navbar-father{
     width: 100%;
@@ -356,13 +343,10 @@ header{
     position: absolute;
     left: 0;
     top: 0;
-    overflow-y: clip;
 }
 .footer{
-    display: flow-root;
     position: relative;
     background-color: #ffcc66;
-    overflow-x: clip;
 }
 
 #footer .footer-semicircle{
