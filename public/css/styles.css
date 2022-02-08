@@ -347,6 +347,7 @@ header{
 .footer{
     position: relative;
     background-color: #ffcc66;
+    overflow-x: clip;
 }
 
 #footer .footer-semicircle{

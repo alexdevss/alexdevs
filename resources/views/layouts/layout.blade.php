@@ -19,45 +19,43 @@
 </head>
 
 <body id="layout">
-    <div class="wrapper">
-        <header>
-            <div class="container position-relative">
-                <img src="{{asset('img/positive_rounded_brand.png')}}" alt="logo"
-                    class="img-fluid interactive-logo no-showed animation" data-logo="positive">
-                <img src="{{asset('img/negative_rounded_brand.png')}}" alt="logo"
-                    class="img-fluid interactive-logo showed animation wow rollIn" data-logo="negative">
-                <div class="navbar-father position-relative px-3">
-                    <nav class="navbar navbar-expand-lg rounded-pill animation expanded slow-animation shadow">
-                        <a class="d-none btn-logo ml-3" href="/">
-                            <img src="{{asset('img/svg/LOGO_REDONDO_SIN_SOMBRA.svg')}}" alt="">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-action="open">
-                            <img src="{{asset('img/hamburger.png')}}" alt="" class="burger-menu">
-                        </button>
-                        <div class="w-100 navbar-collapse animation">
-                            <img src="{{asset('img/svg/curve-banner.svg')}}" alt="" class="navbar-semicircle">
-                            <ul
-                                class="navbar-nav d-lg-flex d-none justify-content-evenly align-items-center m-auto w-100 animation">
-                                <li class="nav-item ml-3">
-                                    <a class="nav-link animation" data-reference="services"
-                                        href="/services">Servicios</a>
-                                </li>
-                                <li class="nav-item ml-3">
-                                    <a class="nav-link animation" data-reference="projects"
-                                        href="/projects">Proyectos</a>
-                                </li>
-                                <li class="nav-item ml-3">
-                                    <a class="nav-link animation" data-reference="about" href="/about">Sobre mí</a>
-                                </li>
-                                <li class="nav-item ml-3">
-                                    <a class="nav-link animation" data-reference="contact" href="/contact">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+    <header>
+        <div class="container position-relative">
+            <img src="{{asset('img/positive_rounded_brand.png')}}" alt="logo"
+                class="img-fluid interactive-logo no-showed animation" data-logo="positive">
+            <img src="{{asset('img/negative_rounded_brand.png')}}" alt="logo"
+                class="img-fluid interactive-logo showed animation wow rollIn" data-logo="negative">
+            <div class="navbar-father position-relative px-3">
+                <nav class="navbar navbar-expand-lg rounded-pill animation expanded slow-animation shadow">
+                    <a class="d-none btn-logo ml-3" href="/">
+                        <img src="{{asset('img/svg/LOGO_REDONDO_SIN_SOMBRA.svg')}}" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-action="open">
+                        <img src="{{asset('img/hamburger.png')}}" alt="" class="burger-menu">
+                    </button>
+                    <div class="w-100 navbar-collapse animation">
+                        <img src="{{asset('img/svg/curve-banner.svg')}}" alt="" class="navbar-semicircle">
+                        <ul
+                            class="navbar-nav d-lg-flex d-none justify-content-evenly align-items-center m-auto w-100 animation">
+                            <li class="nav-item ml-3">
+                                <a class="nav-link animation" data-reference="services" href="/services">Servicios</a>
+                            </li>
+                            <li class="nav-item ml-3">
+                                <a class="nav-link animation" data-reference="projects" href="/projects">Proyectos</a>
+                            </li>
+                            <li class="nav-item ml-3">
+                                <a class="nav-link animation" data-reference="about" href="/about">Sobre mí</a>
+                            </li>
+                            <li class="nav-item ml-3">
+                                <a class="nav-link animation" data-reference="contact" href="/contact">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </header>
+        </div>
+    </header>
+    <div class="wrapper">
         <main id="@yield('view')">
             @yield('main')
         </main>
