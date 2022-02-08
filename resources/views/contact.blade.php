@@ -3,6 +3,8 @@
 @section('view', 'contact')
 @section('main')
 <div class="container">
+    <div class="response-box hide mb-5 rounded-pill text-center p-3 wow fadeInDown">
+    </div>
     <div class="white-box shadow-lg p-4 pb-5 wow fadeInDown" data-wow-delay="1s">
         <h1 class="mb-5 text-center">¿QUIERES SER ATENDIDO?</h1>
         <form action="/sendEmail" method="POST" id="contactForm">
@@ -58,6 +60,37 @@
     </div>
 </div>
 
+@if ($sended == "1" && $sended != null)
+<script>
+    $(document).ready(function(){
+        $(".response-box").addClass('alert-success')
+        $(".response-box").html("Mensaje enviado correctamente")
+        $(".response-box").removeClass('hide')
+    })
+    
+</script>
+@elseif ($sended == "0" && $sended != null)
+<script>
+    $(document).ready(function(){
+        $(".response-box").addClass('alert-success')
+        $(".response-box").html("Ha ocurrido un error. Inténtelo más tarde")
+        $(".response-box").removeClass('hide')
+        $(".response-box").addClass('alert-danger')
+    })
+</script>
+@endif
+
+<script>
+    $("#contactForm").on("submit", function(e){
+        if($("#name") == "" || $("#last_names") == "" || $("#phone") == "" || $("#email") == "" || $("#description")){
+            e.preventDefault();
+            $(".response-box").addClass('alert-success')
+            $(".response-box").html("Por favor, rellene todos los campos")
+            $(".response-box").removeClass('hide')
+            $(".response-box").addClass('alert-danger')
+        }
+    })
+</script>
 <div class="d-100"></div>
 <div class="d-100"></div>
 <div class="d-50"></div>

@@ -496,7 +496,7 @@ header{
     font-size: 18px;
 }
 #services .value img{
-    height: 150px;
+    height: 130px;
 }
 
 #services .banner-2{
@@ -1005,6 +1005,11 @@ header{
     h1,h2,h3,h4,h5,h6{
         text-align: center !important;
     }
+    #services .banner,
+    #services .banner-2,
+    #projects .banner{
+        background-attachment: none;
+    }
     /* WELCOME STYLES */
     #welcome .big-title{
         font-size: 65px;
@@ -1054,6 +1059,7 @@ header{
     }
     #footer .footer-semicircle {
         bottom: calc(100% - 0.6%);
+        width: calc(100% + 9%);
     }
 
     /* SERVICES STYLES */

@@ -65,9 +65,8 @@
                             <h3 class="text-center mb-4">MENTORIA</h3>
                             <p class="text-center">
                                 Te ofreceré ideas para
-                                mejorar tu negocio, te guiaré en la
-                                búsqueda de la solución perfecta que se adapte a tus necesidades...
-                                <span>Pero la decisión es tuya</span>
+                                mejorar tu negocio y te guiaré para buscar la solución perfecta que se adapte a tus
+                                necesidades
                             </p>
                         </div>
                         <div class="col-6 d-flex justify-content-center align-items-center img-column">
@@ -82,9 +81,8 @@
                         <div class="col-6 d-flex justify-content-center align-items-center flex-column">
                             <h3 class="text-center mb-4">PROFESIONALIDAD</h3>
                             <p class="text-center">
-                                El desarrollo web es una cadena de producción, y como toda cadena de producción,
-                                tiene sus diferentes procesos.
-                                Me centro en todos y cada de uno de ellos para <span>ofrecerte lo mejor</span>
+                                El desarrollo web es una cadena de producción y tiene sus diferentes procesos.
+                                Me centro en todos para <span>ofrecerte lo mejor</span>
                             </p>
                         </div>
                         <div class="col-6 d-flex justify-content-center align-items-center img-column">
@@ -144,7 +142,7 @@
                     Un ERP es un <span>Planificador de Recursos Empresariales.</span>
                     La implementación de un software de este tipo en tu empresa
                     <span> agilizará y automatizará</span> varios de los procesos administrativos internos.
-                    Una de las ventajas principales de implementar un ERP personalizado
+                    Una de las ventajas de implementar un ERP personalizado
                     es la <span>adaptación a las necesidades reales.</span>
                 </p>
             </div>
@@ -170,7 +168,7 @@
             <br>
             Un ERP te permite administrar las tareas que necesites desde
             cualquier lado y desde cualquier dispositivo. Gana tiempo, potencia
-            el rendimiento de tus trabajadores y controla tu negocio al cien por cien.
+            el rendimiento de tu empresa y contrólala al cien por cien.
         </p>
 
     </div>
@@ -181,15 +179,13 @@
         <div class="white-box p-5 d-flex flex-column justify-content-center align-items-center shadow-lg mt-5 wow fadeInDown"
             data-wow-delay="0.2s">
             <h1>¿BUSCAS ALGO DIFERENTE?</h1>
-            <p class="mt-2">¡Identifiquemos problema y encontremos una solución!</p>
+            <p class="mt-2">¡Identifiquemos el problema y encontremos una solución!</p>
             <a href="/contact" class="button rounded-pill px-5 py-2 mt-4 animation">
                 Contactar
             </a>
         </div>
     </div>
 </div>
-<div class="d-100"></div>
-<div class="d-100"></div>
 <div class="d-100"></div>
 <div class="d-100"></div>
 <div class="d-100"></div>

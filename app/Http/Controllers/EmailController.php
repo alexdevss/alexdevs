@@ -10,7 +10,6 @@ use Illuminate\Support\Facades\Log;
 class EmailController extends Controller
 {
     function sendEmail (Request $request) {
-        Log::debug(gettype($request->description));
         $formData = array(
             'name' => $request->name,
             'last_names' => $request->last_names,
@@ -21,13 +20,9 @@ class EmailController extends Controller
         Mail::to($formData['mail'])->send(new NotifyMail($formData));
      
         if (Mail::failures()) {
-            $response['success'] = false;
-            $response['message'] = 'Ha ocurrido un error';
-            return $response;
+            return redirect()->route('/contact', false);
         }else{
-            $response['success'] = true;
-            $response['message'] = 'Mensaje enviado correctamente';
-             return $response;
+            return redirect()->route('/contact', true);
         }
     }
 }

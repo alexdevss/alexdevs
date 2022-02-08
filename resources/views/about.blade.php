@@ -14,8 +14,7 @@
     <div class="white-box shadow-lg p-5 mb-5 wow fadeInDown" data-wow-delay="0.8s">
         <h1 class="text-center mb-5">METODOLOGÍA Y FILOSOFÍA</h1>
         <p class="text-center">
-            Me defino como una persona seria y perfeccionista para mi trabajo. Está mal que lo diga yo, pero, en serio,
-            creéme.
+            Me defino como una persona seria y meticulosa para mi trabajo<br>
             ¿Has escuchado eso de que cuando se cocina con paciencia y delicadeza, se obtiene un plato delicioso?
             <br><span>¡¡Lo mismo pasa con las webs!!</span><br>
             Si la hacemos con prisas y sin la atención y colaboración necesaria entre tú como cliente, y yo, como

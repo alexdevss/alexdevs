@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EmailController;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +18,9 @@ Route::get('/', function () {return view('welcome');});
 Route::get('/services', function () {return view('services');});
 Route::get('/projects', function () {return view('projects');});
 Route::get('/about', function () {return view('about');});
-Route::get('/contact', function () {return view('contact');});
+Route::get('/contact/{sended?}', function ($sended = false) {
+    return view('contact')->with('sended', $sended);
+})->name('/contact');
 
 // Mail routes
 Route::post('/sendEmail', [EmailController::class, 'sendEmail']);

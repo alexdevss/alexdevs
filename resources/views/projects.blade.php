@@ -9,7 +9,7 @@
             <div class="row m-3">
                 <div class="col-lg-6 col-12">
                     <p class="mb-sm-3 mb-5">
-                        <span>Autos Roso</span> es una empresa de compra y venta de vehículos con sede
+                        <span>Autos Roso</span> es una empresa de compra-venta de vehículos con sede
                         en diferentes islas del archipiélago Canario.
                         Este fue mi primer trabajo publicado y se dio a través de
                         una colaboración con la agencia <span>Wirehammer</span>.
