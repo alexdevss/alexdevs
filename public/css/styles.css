@@ -1061,7 +1061,7 @@ header{
         opacity: 0;
     }
     #footer .footer-semicircle {
-        bottom: calc(100% - 0.6%);
+        bottom: calc(100% - 1px);
         width: calc(100% + 9%);
     }
 
