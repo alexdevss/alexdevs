@@ -46,9 +46,8 @@
 <div class="banner mt-5  d-flex flex-column justify-content-center align-items-start">
     <div class="filter"></div>
     <h1 class="text-center w-100 mb-5 wow fadeInDown">¿A QUÉ ESPERAS PARA SER EL SIGUIENTE?</h1>
-    <p class="text-center w-100 wow fadeInDown" data-wow-delay=".5s">Cuéntame tu idea</p>
-    <div class="d-flex justify-content-center align-items-center w-100 mt-5 wow fadeInDown button-father"
-        data-wow-delay=".8s">
+    <p class="text-center w-100 wow fadeInDown" data-wow-delay=".3s">Cuéntame tu idea</p>
+    <div class="d-flex justify-content-center align-items-center w-100 mt-5 wow fadeInDown button-father" data-wow-delay=".6s">
         <a href="/contact" class="button rounded-pill px-5 py-2 mt-4 animation">
             CONTACTA YA
         </a>
@@ -58,5 +57,6 @@
 <div class="d-100"></div>
 <div class="d-100"></div>
 <div class="d-100"></div>
-<div class="d-50"></div>
+<div class="d-100 d-none d-sm-block"></div>
+<div class="d-100 d-none d-sm-block"></div>
 @endsection

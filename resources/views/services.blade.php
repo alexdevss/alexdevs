@@ -7,7 +7,7 @@
         <h1 class="text-center mb-5">LANDING PAGE</h1>
         <div class="row">
             <div
-                class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+                 class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
                 <h3 class="mb-4">¿QUÉ ES Y PARA QUE SIRVE?</h3>
                 <p class="text-lg-left text-center">
                     La definición más acertada para ese tipo de página web
@@ -20,7 +20,7 @@
                 </p>
             </div>
             <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
-                <img src="{{asset('img/positive_rounded_brand.png')}}" alt="" class="img-fluid logo-services">
+                <img src="{{asset('img/positive_rounded_brand.png')}}" alt="" class="img-fluid logo-services mb-5">
                 <p class="img-foot text-center">¡ESTO ES UNA LANDING PAGE!</p>
             </div>
         </div>
@@ -47,7 +47,7 @@
 
     </div>
     <div class="recomended text-center d-flex justify-content-center align-items-center flex-column wow fadeInDownBig"
-        data-wow-duration="3s" data-wow-delay="1s">
+         data-wow-duration="3s" data-wow-delay="1s">
         <img src="{{asset('img/svg/marker.svg')}}" alt="" class="img-fluid img-marker">
         <h1 class="wow fadeInDown">SERVICIO <br>RECOMENDADO</h1>
         <img src="{{asset('img/svg/number_one.svg')}}" alt="" class="img-fluid mt-3 img-one">
@@ -132,11 +132,10 @@
 <div class="d-100"></div>
 <div class="d-100"></div>
 <div class="container">
-    <div class="white-box p-5 shadow-lg service wow fadeInDown" data-wow-delay="1.5s">
+    <div class="white-box p-5 shadow-lg service wow fadeInDown" data-wow-delay="1s">
         <h1 class="text-center mb-5">SOLUCIÓN ERP</h1>
         <div class="row">
-            <div
-                class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+            <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
                 <h3 class="mb-4">¿QUÉ ES Y PARA QUE SIRVE?</h3>
                 <p class="text-center text-lg-left">
                     Un ERP es un <span>Planificador de Recursos Empresariales.</span>
@@ -163,7 +162,7 @@
     <div class="filter"></div>
     <div class="container d-flex flex-column justify-content-center align-items-lg-start align-items-center">
         <h1 class="mb-5 wow fadeInDown">¿POR QUÉ UN ERP?</h1>
-        <p class="wow fadeInDown text-lg-left text-center" data-wow-delay="1s">
+        <p class="wow fadeInDown text-lg-left text-center" data-wow-delay="0.5s">
             <span>Es hora de innovar y el COVID nos lo ha recordado.</span>
             <br>
             Un ERP te permite administrar las tareas que necesites desde
@@ -176,8 +175,7 @@
 <div class="d-100"></div>
 <div class="callToAction">
     <div class="container">
-        <div class="white-box p-5 d-flex flex-column justify-content-center align-items-center shadow-lg mt-5 wow fadeInDown"
-            data-wow-delay="0.2s">
+        <div class="white-box p-5 d-flex flex-column justify-content-center align-items-center shadow-lg mt-5 wow fadeInDown" data-wow-delay="0.5s">
             <h1>¿BUSCAS ALGO DIFERENTE?</h1>
             <p class="mt-2">¡Identifiquemos el problema y encontremos una solución!</p>
             <a href="/contact" class="button rounded-pill px-5 py-2 mt-4 animation">
@@ -189,4 +187,7 @@
 <div class="d-100"></div>
 <div class="d-100"></div>
 <div class="d-100"></div>
+<div class="d-100"></div>
+<div class="d-none d-sm-block d-100"></div>
+<div class="d-none d-sm-block d-100"></div>
 @endsection

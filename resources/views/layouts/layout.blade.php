@@ -21,10 +21,8 @@
 <body id="layout">
     <header>
         <div class="container position-relative">
-            <img src="{{asset('img/positive_rounded_brand.png')}}" alt="logo"
-                class="img-fluid interactive-logo no-showed animation" data-logo="positive">
-            <img src="{{asset('img/negative_rounded_brand.png')}}" alt="logo"
-                class="img-fluid interactive-logo showed animation wow rollIn" data-logo="negative">
+            <img src="{{asset('img/positive_rounded_brand.png')}}" alt="logo" class="img-fluid interactive-logo no-showed animation" data-logo="positive">
+            <img src="{{asset('img/negative_rounded_brand.png')}}" alt="logo" class="img-fluid interactive-logo showed animation wow rollIn" data-logo="negative">
             <div class="navbar-father position-relative px-3">
                 <nav class="navbar navbar-expand-lg rounded-pill animation expanded slow-animation shadow">
                     <a class="d-none btn-logo ml-3" href="/">
@@ -35,8 +33,7 @@
                     </button>
                     <div class="w-100 navbar-collapse animation">
                         <img src="{{asset('img/svg/curve-banner.svg')}}" alt="" class="navbar-semicircle">
-                        <ul
-                            class="navbar-nav d-lg-flex d-none justify-content-evenly align-items-center m-auto w-100 animation">
+                        <ul class="navbar-nav d-lg-flex d-none justify-content-evenly align-items-center m-auto w-100 animation">
                             <li class="nav-item ml-3">
                                 <a class="nav-link animation" data-reference="services" href="/services">Servicios</a>
                             </li>
@@ -63,11 +60,10 @@
             <div class="footer wow fadeIn" data-wow-duration="1s">
                 <img src="{{asset('img/svg/curve-banner.svg')}}" alt="" class="footer-semicircle">
                 <div class="container big-container">
-                    <div
-                        class="d-flex flex-lg-row flex-column justify-content-lg-evenly justify-content-evenly align-items-lg-start align-items-center footer-box">
-                        <div class="d-flex justify-content-center align-items-center footer-brand">
-                            <img src="{{asset('img/negative_rounded_brand.png')}}" alt="" class="img-fluid">
-                        </div>
+                    <div class="d-flex justify-content-center align-items-center footer-brand">
+                        <img src="{{asset('img/negative_rounded_brand.png')}}" alt="" class="img-fluid my-5 my-md-0">
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row justify-content-evenly align-items-start footer-box">
                         <div class="d-flex justify-content-evenly align-items-start w-100 footer-child">
                             <ul class="footer-list">
                                 <li class="title mb-3">CONTENIDO</li>
@@ -81,21 +77,21 @@
                                 <li class="title mb-3">REDES SOCIALES</li>
                                 <li class="mb-1">
                                     <a href=""
-                                        class="d-flex justify-content-lg-start justify-content-center align-items-center icon-text animation">
+                                       class="d-flex justify-content-start align-items-center icon-text animation">
                                         <img src="{{asset('img/svg/instagram.svg')}}" alt="" class="img-fluid">
                                         <p class="mb-0 ml-1">alexdevs_</p>
                                     </a>
                                 </li>
                                 <li class="mb-1">
                                     <a href=""
-                                        class="d-flex justify-content-lg-start justify-content-center align-items-center icon-text animation">
+                                       class="d-flex justify-content-start align-items-center icon-text animation">
                                         <img src="{{asset('img/svg/twitter.svg')}}" alt="" class="img-fluid">
                                         <p class="mb-0 ml-1">alexdevs3</p>
                                     </a>
                                 </li>
                                 <li class="mb-1">
                                     <a href=""
-                                        class="d-flex justify-content-lg-start justify-content-center align-items-center icon-text animation">
+                                       class="d-flex justify-content-start align-items-center icon-text animation">
                                         <img src="{{asset('img/svg/github.svg')}}" alt="" class="img-fluid">
                                         <p class="mb-0 ml-1">alexdevss</p>
                                     </a>
@@ -106,15 +102,13 @@
                             <ul class="footer-list">
                                 <li class="title mb-3">CONTACTO</li>
                                 <li class="mb-1">
-                                    <div
-                                        class="d-flex justify-content-lg-start justify-content-center align-items-center icon-text">
+                                    <div class="d-flex justify-content-start align-items-center icon-text">
                                         <img src="{{asset('img/svg/mail.svg')}}" alt="" class="img-fluid">
                                         <p class="mb-0 ml-1">alexxdevss@gmail.com</p>
                                     </div>
                                 </li>
                                 <li class="mb-1">
-                                    <div
-                                        class="d-flex justify-content-lg-start justify-content-center align-items-center icon-text">
+                                    <div class="d-flex justify-content-start align-items-center icon-text">
                                         <img src="{{asset('img/svg/phone.svg')}}" alt="" class="img-fluid">
                                         <p class="mb-0 ml-1">625 128 986</p>
                                     </div>

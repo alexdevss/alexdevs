@@ -17,6 +17,9 @@ class EmailController extends Controller
             'description'=> $request->description,
             'phone' => $request->phone
         );
+        if(empty($formData['name'])){
+            return redirect('/awfulMessage');
+        }
         Mail::to($formData['mail'])->send(new NotifyMail($formData));
      
         if (Mail::failures()) {

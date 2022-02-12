@@ -21,6 +21,9 @@ Route::get('/about', function () {return view('about');});
 Route::get('/contact/{sended?}', function ($sended = false) {
     return view('contact')->with('sended', $sended);
 })->name('/contact');
+Route::get('/awfulMessage', function () {
+    return view('awful_message');
+})->name('/awful_message');
 
 // Mail routes
 Route::post('/sendEmail', [EmailController::class, 'sendEmail']);

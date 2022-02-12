@@ -1,7 +1,6 @@
 $(document).ready(function(){
     new WOW().init();
     if($(document).width() <= 820){
-        showWelcomeMenus();
         mobileNavbar();
     } else {
         navbarAnimation();
@@ -17,20 +16,6 @@ $(document).ready(function(){
         })
     }
 })
-
-function showWelcomeMenus(){
-    let menus = $("#welcome .target");
-    menus.each((i, menu) => {
-        menu = $(menu);
-        menu.on("click", function(){
-            if(menu.height() <= 50){
-                menu.height("calc(50px + 130px)");
-            } else {
-                menu.height("34");
-            }
-        })
-    })
-}
 
 function navbarAnimation(){
     $(".interactive-logo").on("click", function(e){
@@ -54,8 +39,8 @@ function navbarAnimation(){
         }
     });
 }
-function navbarOccurs(type = false){
-    if(type){
+function navbarOccurs(mobile = false){
+    if(mobile){
         $(".navbar").css({
             "transform": "translateY(calc(0%))"
         })
@@ -68,9 +53,6 @@ function navbarOccurs(type = false){
 }
 
 function mobileNavbar(){
-    $("#layout nav.navbar").css({
-        "transform": "translateY(calc(0% - 1500px)) translateX(calc(0%))"
-    })
     setTimeout(() => {
         navbarOccurs(true)
     }, 500);
@@ -90,16 +72,27 @@ function mobileNavbar(){
                     height: "20vh",
                 })            
             }            
-            navbarList.removeClass("d-none").addClass("d-flex");
+            navbarList.removeClass("d-none");
+            setTimeout(() => {
+                navbarList.css({
+                    'opacity' : '1'
+                })
+            }, 250);
+            
             $(this).attr("data-action", "close");
         } else {
             let navbarList = $(this).parent().find(".navbar-nav");
             let navbarParent = $(this).parent().find(".navbar-collapse");
-            
-            navbarList.removeClass("d-flex").addClass("d-none");
-            navbarParent.css({
-                height: "0px",
+            navbarList.css({
+                'opacity' : '0'
             })
+            setTimeout(() => {
+                navbarList.removeClass("d-flex").addClass("d-none");
+                navbarParent.css({
+                    height: "0px",
+                })
+            }, 250);
+            
             $(this).attr("data-action", "open");
         }
     })
