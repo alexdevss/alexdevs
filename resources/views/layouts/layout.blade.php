@@ -116,9 +116,9 @@
                             </ul>
                             <ul class="footer-list">
                                 <li class="title mb-3">LOPD</li>
-                                <li class="mb-1"><a href="#">Cookies</a></li>
-                                <li class="mb-1"><a href="#">Aviso legal</a></li>
-                                <li class="mb-1"><a href="#">Política de privacidad</a></li>
+                                <li class="mb-1"><a href="/cookies" target="_blank">Cookies</a></li>
+                                <li class="mb-1"><a href="/legality" target="_blank">Aviso legal</a></li>
+                                <li class="mb-1"><a href="/privacity" target="_blank">Política de privacidad</a></li>
                             </ul>
                         </div>
                     </div>
@@ -126,6 +126,7 @@
             </div>
         </footer>
     </div>
+    @yield('resources')
 </body>
 
 </html>

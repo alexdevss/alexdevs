@@ -17,7 +17,7 @@
                     </div>
                     <div class="form-group">
                         <label for="last_names">¿Cuáles son tus apellidos?</label>
-                        <input type="text" class="form-control rounded" id="last_name" name="last_names"
+                        <input type="text" class="form-control rounded" id="last_names" name="last_names"
                                placeholder="Ej: Parker">
                     </div>
                     <div class="form-group">
@@ -40,8 +40,8 @@
                     <div class="d-flex justify-content-start align-items-center mb-sm-3">
                         <input type="checkbox" value="ttcc" id="ttcc">
                         <label class="form-check-label lopd ml-3" for="defaultCheck1">
-                            Acepto los <a href="" class="standard-link">términos y condiciones de uso</a> y la <a
-                               href="" class="standard-link">política de privacidad</a>
+                            Acepto los <a href="/legality" target="_blank" class="standard-link">términos y condiciones de uso</a> y la <a
+                               href="/privacity" target="_blank" class="standard-link">política de privacidad</a>
                         </label>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
@@ -58,41 +58,23 @@
     <div class="d-100"></div>
 </div>
 
-@if ($sended == "1" && $sended != null)
 <script>
     $(document).ready(function(){
+    $('body').bind('cut copy paste', function(event) {
+        event.preventDefault();
+    });
+    @if ($sended == "1" && $sended != null)
         $(".response-box").addClass('alert-success')
-        $(".response-box").html("Mensaje enviado correctamente")
-        $(".response-box").removeClass('hide')
-    })
-    
-</script>
-@elseif ($sended == "0" && $sended != null)
-<script>
-    $(document).ready(function(){
-        $(".response-box").addClass('alert-success')
-        $(".response-box").html("Ha ocurrido un error. Inténtelo más tarde")
-        $(".response-box").removeClass('hide')
+        $(".response-box").html("Mensaje enviado correctamente.")
+    @elseif ($sended == "0" && $sended != null)
         $(".response-box").addClass('alert-danger')
-    })
-</script>
-@endif
-
-<script>
-    $("#contactForm").on("submit", function(e){
-        let validated = false;
-        if($("#name").val() == "" || $("#last_names").val() == "" || $("#phone").val() == "" || $("#email").val() == "" || $("#description").val() == ""){
-            e.preventDefault();
-            $(".response-box").addClass('alert-success')
-            $(".response-box").html("Por favor, rellene todos los campos")
-            $(".response-box").removeClass('hide')
-            $(".response-box").addClass('alert-danger')
-        } else {
-            validated = true;
-        }
-
-        validated ? $("#contactBtn").html("Enviando...") : '';
-    })
+        $(".response-box").html("Ha ocurrido un error. Inténtelo más tarde")
+    @endif
+    $(".response-box").removeClass('hide')
+})
 </script>
 
+@endsection
+@section('resources')
+<script src="{{asset('js/contact.js')}}"></script>
 @endsection

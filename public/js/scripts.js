@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    console.log('%c ¿Qué estás noveleriando, entera@?', 'background: #222; color: #bada55');
     new WOW().init();
     if($(document).width() <= 820){
         mobileNavbar();

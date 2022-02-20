@@ -59,8 +59,9 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Blogger-bold';
     color: #272727;
 }
-a.standard-link{
+.lopd a.standard-link{
     color: #3490dc;
+    font-size: 18px !important;
 }
 
 p, a, label {
@@ -431,14 +432,19 @@ header{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
-#services .banner h1,
+#services .banner h1:not(.recomended h1),
 #services .banner p,
 #services .banner span{
     color: #fff !important;
     z-index: 1;
     position: relative;
-    text-shadow: 0px 0 20px #0000008f;
+    text-shadow: 0px 0 20px #0000008f
+}
 
+.recomended h1{
+    color: #fff !important;
+    z-index: 1;
+    position: relative;
 }
 
 #services .banner p{
@@ -452,27 +458,13 @@ header{
 }
 
 #services .banner .recomended{
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    right: calc(10%);
-    top: 0;
-    z-index: 999;
-}
-
-#services .banner .img-marker{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-#services .img-one{
     position: relative;
-    z-index: 1;
-    width: 200px;
+    z-index: 999;
+    height: 100%;
+    background-image: url("/img/svg/recommended.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #services .value p{
@@ -1090,7 +1082,7 @@ header{
     }
     /* CONTACT STYLES */
     #layout main#contact{
-        margin-top: calc(0% + 60px);
+        margin-top: calc(0% + 150px);
     }
 
     #contact label{
