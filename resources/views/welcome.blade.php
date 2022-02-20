@@ -20,7 +20,7 @@
 </head>
 
 <body id="welcome" class="animation">
-    <main class="d-flex flex-column justify-content-start justify-content-md-center align-items-center">
+    <main class="d-flex flex-column justify-content-start justify-content-md-center align-items-center pt-5 pt-sm-0">
         <div class="w-100 filter"></div>
 
         <div class="container">
@@ -41,19 +41,17 @@
         </div>
         <div class="container">
             <div class="targets">
-                <h3 class="mb-md-5 my-5 question text-center wow fadeInDown" data-wow-delay="0.5s">¿Qué andas buscando?
-                </h3>
+                <h3 class="mb-md-5 my-5 question text-center wow fadeInDown" data-wow-delay="0.5s">¿Qué andas buscando?</h3>
+                <div class="d-50 d-none d-sm-block"></div>
                 <div class="row row-eq-height animation">
                     <div class="col-12 col-lg-4 mb-lg-0 mb-3">
-                        <div class="target shadow p-3 d-flex justify-content-between align-items-center flex-column animation wow fadeInDown" data-wow-delay="0.3s">
+                        <div class="target shadow p-3 d-flex justify-content-between align-items-center flex-column animation wow fadeInDown" data-wow-delay="0.2s">
                             <p class="target-title text-center mb-0">Servicios</p>
                             <p class="target-text text-center">
-                                <span>Explora</span> las diferentes soluciones
-                                tecnológicas y escoge la que más se
-                                adapte a ti y a tu negocio
+                                <span>Explora</span> y <span>conoce</span> algunas de las soluciones tecnológicas
                             </p>
                             <div class="d-flex justify-content-center align-items-center">
-                                <a href="/services" class="target-button rounded-pill px-5 py-1 mt-4 animation">
+                                <a href="/services" class="target-button rounded-pill px-5 py-1 my-4 animation">
                                     Ver servicios
                                 </a>
                             </div>
@@ -64,26 +62,24 @@
                             <p class="target-title text-center mb-0">Contacto</p>
                             <p class="target-text text-center">
                                 <span>Envíame</span> un correo electrónico
-                                requiriendo la información que
-                                necesites.
+                                explicando tu idea
                             </p>
                             <div class="d-flex justify-content-center align-items-center">
-                                <a href="/contact" class="target-button rounded-pill px-5 py-1 mt-4 animation">
+                                <a href="/contact" class="target-button rounded-pill px-5 py-1 my-4 animation">
                                     Contactar
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-4 mb-lg-0 mb-3">
-                        <div class="target shadow p-3 d-flex justify-content-between align-items-lg-center flex-column animation wow fadeInDown" data-wow-delay="0.7s">
+                        <div class="target shadow p-3 d-flex justify-content-between align-items-lg-center flex-column animation wow fadeInDown" data-wow-delay="0.5s">
                             <p class="target-title text-center mb-0">Sobre mí</p>
                             <p class="target-text text-center">
-                                <span>Conóceme,</span> mi trayectoria
-                                profesional y los trabajos
-                                realizados
+                                <span>Conoce</span> mi trayectoria
+                                profesional
                             </p>
                             <div class="d-flex justify-content-center align-items-center">
-                                <a href="/about" class="target-button rounded-pill px-5 py-1 mt-4 animation">
+                                <a href="/about" class="target-button rounded-pill px-5 py-1 my-4 animation">
                                     Conóceme
                                 </a>
                             </div>

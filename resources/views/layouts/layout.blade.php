@@ -61,7 +61,7 @@
                 <img src="{{asset('img/svg/curve-banner.svg')}}" alt="" class="footer-semicircle">
                 <div class="container big-container">
                     <div class="d-flex justify-content-center align-items-center footer-brand">
-                        <img src="{{asset('img/negative_rounded_brand.png')}}" alt="" class="img-fluid my-5 my-md-0">
+                        <img src="{{asset('img/negative_rounded_brand.png')}}" alt="" class="img-fluid my-5">
                     </div>
                     <div class="d-flex flex-column flex-sm-row justify-content-evenly align-items-start footer-box">
                         <div class="d-flex justify-content-evenly align-items-start w-100 footer-child">

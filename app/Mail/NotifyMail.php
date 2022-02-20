@@ -16,9 +16,12 @@ class NotifyMail extends Mailable
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct($subject, $data, $view, $ip = null)
     {
+        $this->subject = $subject;
         $this->data = $data;
+        $this->view = $view;
+        $this->ip = $ip;
     }
 
     /**
@@ -28,6 +31,6 @@ class NotifyMail extends Mailable
      */
     public function build()
     {
-        return $this->view('mail.client', $this->data);
+        return $this->subject($this->subject)->view($this->view, $this->data)->with('ip', $this->ip);
     }
 }

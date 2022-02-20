@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EmailController;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
@@ -22,7 +23,7 @@ Route::get('/contact/{sended?}', function ($sended = false) {return view('contac
 Route::get('/awfulMessage', function () {return view('awful_message');})->name('/awful_message');
 Route::get('/legality', function () {return view('legality');});
 Route::get('/privacity', function () {return view('privacity');});
-Route::get('/cookies', function () {return view('cookies');});
+Route::get('/cookies', function () {return view('cookies')->with('cookies', Config::get('constants.cookies'));});
 
 // Mail routes
 Route::post('/sendEmail', [EmailController::class, 'sendEmail']);

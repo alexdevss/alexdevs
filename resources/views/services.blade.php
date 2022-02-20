@@ -33,13 +33,13 @@
 </div>
 <div class="d-50"></div>
 <div class="d-50"></div>
-<div class="banner mt-5  d-flex flex-column justify-content-center align-items-start">
+<div class="banner mt-5 d-flex flex-column justify-content-center align-items-start">
     <div class="filter"></div>
-    <div class="row w-100">
-        <div class="col-6 d-flex justify-content-end align-items-center">
-            <div class="d-flex justify-content-center align-items-start d-flex flex-column ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 col-xl-6 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
                 <h1 class="mb-lg-5 mb-4 wow fadeInDown">¿POR QUÉ UNA LANDING PAGE?</h1>
-                <p class="wow fadeInDown text-lg-left text-center" data-wow-delay="1s">
+                <p class="wow fadeInDown text-lg-left text-center px-3 px-sm-0" data-wow-delay="1s">
                     Una página web es <span>de las mejores herramientas</span> para potenciar la visibilidad
                     de tu negocio en internet. Además de fomentar la captación de clientes,
                     tener página web es sinónimo de <span>profesionalidad y crecimiento.</span>
@@ -47,10 +47,10 @@
                     Si eres una <span>startup</span> y quieres comenzar a promocionar tu negocio, esta es tu solución.
                 </p>
             </div>
-        </div>
-        <div class="col-6">
-            <div class="recomended text-center d-flex justify-content-center align-items-center flex-column wow fadeIn" data-wow-delay="1s" data-wow-duration="2s">
-                <h1>SERVICIO <br>RECOMENDADO</h1>
+            <div class="col-6 col-lg-4 col-xl-6">
+                <div class="recomended text-center d-flex justify-content-center align-items-center flex-column wow fadeIn" data-wow-delay="1.5s" data-wow-duration="2s">
+                    <h1>SERVICIO <br>RECOMENDADO</h1>
+                </div>
             </div>
         </div>
     </div>

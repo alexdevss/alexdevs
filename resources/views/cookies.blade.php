@@ -41,7 +41,16 @@
 
         </ul>
         <h4>Declaración de Cookies</h4>
-        <h1>CREATE COOKIES TABLE JS</h1>
+        <table id="cookiesTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Finalidad</th>
+                    <th>Información</th>
+                </tr>
+            </thead>
+            <tbody id="cookiesTableBody"></tbody>
+        </table>
         <h4>Revocación del consentimiento para instalar Cookies</h4>
         <p>Para rechazar el uso de las cookies, deniege el aviso que carga cuando inicie la página</p>
         <h4>Cómo eliminar las Cookies del navegador.</h4>
@@ -60,3 +69,33 @@
 <div class="d-100"></div>
 <div class="d-100"></div>
 @endsection
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        let storedCookies = @json($cookies);
+        let cookies = document.cookie.split("=");
+        cookies.forEach((cookie, i) => {
+            if(i === 0){
+                let currentCookie = storedCookies[cookie];
+                let row = "";
+                if(currentCookie !== undefined){
+                    row = `<tr><td>${currentCookie.name}</td><td>${currentCookie.used_to}</td><td>${currentCookie.personal_data}</td>`
+                } else {
+                    row = `<tr><td>${cookie}</td><td>NUEVA COOKIE</td><td>NUEVA COOKIE</td>`    
+                }
+                $(row).appendTo("#cookiesTableBody");
+            } else {
+                let isEven = i % 2 == 0 ? true : false;
+                if(isEven === true){
+                    let currentCookie = storedCookies.find(c => c.name == cookie);
+                    let row = "";
+                    if(currentCookie !== undefined){
+                        row = `<tr><td>${currentCookie.name}</td><td>${currentCookie.used_to}</td><td>${currentCookie.personal_data}</td>`
+                    } else {
+                        row = `<tr><td>${cookie}</td><td>NUEVA COOKIE</td><td>NUEVA COOKIE</td>`    
+                    }
+                    $(row).appendTo("#cookiesTableBody");
+                }
+            }
+        });
+    }, false);
+</script>

@@ -59,9 +59,8 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Blogger-bold';
     color: #272727;
 }
-.lopd a.standard-link{
-    color: #3490dc;
-    font-size: 18px !important;
+a.standard-link{
+    color: #3490dc !important;
 }
 
 p, a, label {
@@ -561,6 +560,20 @@ header{
     z-index: 2;
 
 }
+
+/* COOKIES STYLES */
+#cookiesTable{
+    width: 100%;
+    text-align: center;
+}
+#cookiesTable th,
+#cookiesTable td{
+    padding: 10px 0;
+}
+#cookiesTable thead tr{
+    color: #fff;
+    background-color: #999;
+}
 /* -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 -- --  -- -- -- -- -- -- -- Responsive  -- -- -- -- -- -- -- -- -- -- -- -- 
 -- --  -- -- -- -- -- -- -- -- -- -- --  -- -- -- -- -- -- -- -- -- -- --*/
@@ -624,9 +637,9 @@ header{
     }
 
     #layout .interactive-logo{
-        height: 170px;
+        height: 150px;
         left: calc(0% - 25px);
-        top: calc(0% - 45px);     
+        top: calc(0% - 35px);     
     }
 
     #layout .nav-link{
@@ -644,11 +657,6 @@ header{
         height: 500px;
     }
 
-    #services .banner .recomended{
-        height: 250px;
-        width: 250px;
-    }
-
     #services .banner .recomended h1{
         font-size: 30px;
     }
@@ -657,7 +665,7 @@ header{
     }
     
     #services .logo-services{
-        height: 250px;
+        height: 220px;
         width: auto;
     }
 
@@ -826,18 +834,15 @@ header{
     }
     
     #layout .interactive-logo {
-        height: 150px;
+        height: 130px;
+        top: calc(0% - 30px);
     }
     #layout main{
-        margin-top: calc(0% + 120px);
+        margin-top: calc(0% + 210px);
     }
     
     /* SERVICES STYLES */
     
-    #services .banner .recomended {
-        height: 200px;
-        width: 200px;
-    }
     #services .banner .recomended .img-one {
         height: 90px;
     }
