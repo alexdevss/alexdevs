@@ -27,3 +27,4 @@ Route::get('/cookies', function () {return view('cookies')->with('cookies', Conf
 
 // Mail routes
 Route::post('/sendEmail', [EmailController::class, 'sendEmail']);
+
