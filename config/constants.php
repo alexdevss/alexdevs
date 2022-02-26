@@ -18,6 +18,7 @@
                 'used_to' => 'Se usa para el correcto funcionamiento de la web',
                 'personal_data' => 'No almacena información personal'
             ]
-        ]
+            ],
+        'badIps' => []
     ];
 ?>

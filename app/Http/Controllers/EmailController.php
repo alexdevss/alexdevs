@@ -21,6 +21,8 @@ class EmailController extends Controller
         );
         if(check_empty_request($formData) === false){
             $ip = $request->ip();
+            Config::set('constants.badIps', $ip);
+            Log::debug(Config::get('constants.badIps'));
             Mail::to(env('MAIL_MY_EMAIL'))->send(new NotifyMail(Config::get('constants.mail.subject.to_me_spy'), $formData, Config::get('constants.mail.view.to_me_spy'), $ip));
             return redirect('/awfulMessage');
         }
