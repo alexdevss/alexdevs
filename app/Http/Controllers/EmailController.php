@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\MyNotifyMail;
 use App\Mail\NotifyMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
