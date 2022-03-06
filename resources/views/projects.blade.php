@@ -16,21 +16,21 @@
                     </p>
                     <ul class="project-stack p-sm-0">
                         <li class="d-flex justify-content-start align-items-center">
-                            <img src="{{asset('img/key_icons.png')}}" class="mr-3">
+                            <img src="/img/key_icons.png')}}" class="mr-3">
                             <p class="mb-0">Sector automovilístico</p>
                         </li>
                         <li class="d-flex justify-content-start align-items-center">
-                            <img src="{{asset('img/key_icons.png')}}" class="mr-3">
+                            <img src="/img/key_icons.png" class="mr-3">
                             <p class="mb-0">Solución landing page + ERP (Backpanel personalizado)</p>
                         </li>
                         <li class="d-flex justify-content-start align-items-center">
-                            <img src="{{asset('img/key_icons.png')}}" class="mr-3">
+                            <img src="/img/key_icons.png" class="mr-3">
                             <p class="mb-0">Java y Google App Engine</p>
                         </li>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center mt-lg-0 mt-5">
-                    <img src="{{asset('img/ar.png')}}" class="img-fluid">
+                    <img src="/img/ar.png" class="img-fluid">
                 </div>
             </div>
             <div class="d-flex justify-content-center align-items-center mt-lg-3 mt-5">

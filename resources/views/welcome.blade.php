@@ -8,15 +8,15 @@
     <title>alexdevs</title>
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{asset('css/styles.css')}}">
-    <link rel="stylesheet" href="{{asset('css/animate.css')}}">
-    <script src="{{asset('js/app.js')}}"></script>
-    <script src="{{asset('js/scripts.js')}}"></script>
-    <script src="{{asset('js/wow.js')}}"></script>
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <script src="/js/app.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/wow.js"></script>
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('favicon.ico')}}" />
-    <link rel="icon" type="image/x-icon" href="{{asset('favicon.ico')}}" />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 </head>
 
 <body id="welcome" class="animation">
@@ -26,16 +26,16 @@
         <div class="container">
             <div class="d-sm-flex justify-content-center align-items-center flex-column social-media">
                 <a href="https://www.instagram.com/alexdevs_/?hl=es" class="social-network d-flex justify-content-evenly align-items-center rounded-pill px-3 py-1 mb-3 animation wow fadeInDown" data-wow-delay="2s">
-                    <img src="{{asset('/img/svg/instagram.svg')}}" alt="instagram">
+                    <img src="/img/svg/instagram.svg" alt="instagram">
                     <p class="mb-0 ml-2">alexdevss_</p>
                 </a>
                 <a href="https://github.com/alexdevss" class="social-network d-flex justify-content-evenly align-items-center rounded-pill px-3 py-1 mb-3 animation wow fadeInDown" data-wow-delay="2.3s">
-                    <img src="{{asset('/img/svg/github.svg')}}" alt="github">
+                    <img src="/img/svg/github.svg" alt="github">
                     <p class="mb-0 ml-2">alexdevss</p>
                 </a>
             </div>
             <div class="mobile-brand d-sm-none d-flex justify-content-center align-items-center">
-                <img src="{{asset('img/positive_rounded_brand.png')}}" alt="" class="img-fluid wow rollIn" data-wow-delay="0.5s">
+                <img src="/img/positive_rounded_brand.png" alt="" class="img-fluid wow rollIn" data-wow-delay="0.5s">
             </div>
             <h1 class="mb-0 big-title text-center mb-sm-0 mb-3 wow fadeInDown d-sm-block d-none">alexdevs</h1>
         </div>

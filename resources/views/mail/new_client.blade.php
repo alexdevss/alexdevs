@@ -7,7 +7,7 @@
         <p style="color:#fff">Número móvil: {{$phone}}</p>
         <p style="color:#fff">Descripción: {{$description}}</p>
         <h2 style="color: #fff;">¡Mucha mierda!</h2>
-        <img src="{{asset('img/negative_rounded_brand.png')}}" alt="alexdevs_logo"
+        <img src="/img/negative_rounded_brand.png" alt="alexdevs_logo"
              style="height:150px;width:150px;margin-top:20px">
     </div>
 </div>
