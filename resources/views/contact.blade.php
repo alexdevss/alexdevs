@@ -78,5 +78,5 @@
 
 @endsection
 @section('resources')
-<script src="{{asset('js/contact.js')}}"></script>
+<script src="/js/contact.js"></script>
 @endsection

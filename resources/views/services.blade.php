@@ -20,7 +20,7 @@
                 </p>
             </div>
             <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
-                <img src="{{asset('img/positive_rounded_brand.png')}}" alt="" class="img-fluid logo-services mb-5">
+                <img src="/img/positive_rounded_brand.png" alt="" class="img-fluid logo-services mb-5">
                 <p class="img-foot text-center">¡ESTO ES UNA LANDING PAGE!</p>
             </div>
         </div>
@@ -72,7 +72,7 @@
                             </p>
                         </div>
                         <div class="col-6 d-flex justify-content-center align-items-center img-column">
-                            <img src="{{asset('img/svg/i.svg')}}" alt="" class="img-fluid">
+                            <img src="/img/svg/i.svg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
                             </p>
                         </div>
                         <div class="col-6 d-flex justify-content-center align-items-center img-column">
-                            <img src="{{asset('img/svg/professionality.svg')}}" alt="" class="img-fluid">
+                            <img src="/img/svg/professionality.svg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@
                             </p>
                         </div>
                         <div class="col-6 d-flex justify-content-center align-items-center img-column">
-                            <img src="{{asset('img/svg/handshake.svg')}}" alt="" class="img-fluid">
+                            <img src="/img/svg/handshake.svg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                             </p>
                         </div>
                         <div class="col-6 d-flex justify-content-center align-items-center img-column">
-                            <img src="{{asset('img/svg/like.svg')}}" alt="" class="img-fluid">
+                            <img src="/img/svg/like.svg" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                 </p>
             </div>
             <div class="col-lg-6 col-12 d-flex flex-column justify-content-center align-items-center">
-                <img src="{{asset('img/svg/erp.svg')}}" alt="" class="img-fluid logo-services">
+                <img src="/img/svg/erp.svg" alt="" class="img-fluid logo-services">
             </div>
         </div>
     </div>
