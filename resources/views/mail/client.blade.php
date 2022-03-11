@@ -6,7 +6,7 @@
         <h3 style="color: #fff">¡Encontraremos una solución perfecta!</h3>
         <h3 style="color: #fff">Me pondré en contacto contigo lo antes posible a través de tu correo: {{$mail}}</h3>
         <h2 style="color: #fff;">¡Muchas gracias!</h2>
-        <img src="/img/negative_rounded_brand.png" alt="alexdevs_logo"
+        <img src="{{asset('img/negative_rounded_brand.png')}}" alt="alexdevs_logo"
              style="height:150px;width:150px;margin-top:20px">
     </div>
 </div>
