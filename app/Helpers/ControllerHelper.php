@@ -14,6 +14,7 @@ if(! function_exists("check_empty_request")){
 if(!function_exists("request_to_array")){
     function request_to_array(Request $request){
         $arr = [];
+        $request = $request->all();
         unset($request["_token"]);
         foreach ($request as $key => $value) {
             $arr[$key] = $value;
