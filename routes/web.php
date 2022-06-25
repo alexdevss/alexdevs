@@ -28,4 +28,6 @@ Route::middleware('cache.headers:public;max_age=31536000;etag')->group(function 
     
     // Mail routes
     Route::post('/sendEmail', [EmailController::class, 'sendEmail']);
+    Route::get('/test', [EmailController::class, 'test']);
+
 });
