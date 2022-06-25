@@ -7,7 +7,7 @@
     </div>
     <div class="white-box shadow-lg p-4 pb-5 wow fadeInDown" data-wow-delay="1s">
         <h1 class="mb-5 text-center">¿QUIERES SER ATENDIDO?</h1>
-        <form action="/sendEmail" method="POST" id="contactForm">
+        <form action="{{url('/sendEmail')}}" method="POST" id="contactForm">
             @csrf
             <div class="row">
                 <div class="col-lg-4 col-12 offset-lg-1">

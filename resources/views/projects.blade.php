@@ -16,7 +16,7 @@
                     </p>
                     <ul class="project-stack p-sm-0">
                         <li class="d-flex justify-content-start align-items-center">
-                            <img src="/img/key_icons.png')}}" class="mr-3">
+                            <img src="/img/key_icons.png" class="mr-3">
                             <p class="mb-0">Sector automovilístico</p>
                         </li>
                         <li class="d-flex justify-content-start align-items-center">
