@@ -33,7 +33,6 @@
             un curso en programación web a través de Tokio School, otro orientado al Marketing Digital, muchas
             horas de autoformación y proyecto publicado, <span>consigo mi primer puesto como desarrollador en
                 <a href="https://symbyosys.es/" class="standard-link" target="_blank">Symbyosys</a>.
-                Actualmente trabajo en <a href="https://edataconsulting.es/" class="standard-link" target="_blank">edataconsulting</a></span>
         </p>
     </div>
     <div class="d-flex justify-content-center align-items-center wow fadeInDown" data-wow-delay=".5s">
