@@ -64,63 +64,35 @@
                         <img src="/img/negative_rounded_brand.png" alt="" class="img-fluid my-5">
                     </div>
                     <div class="d-flex flex-column flex-sm-row justify-content-evenly align-items-start footer-box">
-                        <div class="d-flex justify-content-evenly align-items-start w-100 footer-child">
-                            <ul class="footer-list">
-                                <li class="title mb-3">CONTENIDO</li>
-                                <li class="mb-1"><a href="/">Home</a></li>
-                                <li class="mb-1"><a href="/services">Servicios</a></li>
-                                <li class="mb-1"><a href="/projects">Proyectos</a></li>
-                                <li class="mb-1"><a href="/about">Sobre mí</a></li>
-                                <li class="mb-1"><a href="/contact">Contacto</a></li>
-                            </ul>
-                            <ul class="footer-list">
-                                <li class="title mb-3">REDES SOCIALES</li>
-                                <li class="mb-1">
-                                    <a href=""
-                                       class="d-flex justify-content-start align-items-center icon-text animation">
-                                        <img src="/img/svg/instagram.svg" alt="" class="img-fluid">
-                                        <p class="mb-0 ml-1">alexdevs_</p>
-                                    </a>
-                                </li>
-                                <li class="mb-1">
-                                    <a href=""
-                                       class="d-flex justify-content-start align-items-center icon-text animation">
-                                        <img src="/img/svg/twitter.svg" alt="" class="img-fluid">
-                                        <p class="mb-0 ml-1">alexdevs3</p>
-                                    </a>
-                                </li>
-                                <li class="mb-1">
-                                    <a href=""
-                                       class="d-flex justify-content-start align-items-center icon-text animation">
-                                        <img src="/img/svg/github.svg" alt="" class="img-fluid">
-                                        <p class="mb-0 ml-1">alexdevss</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="d-flex justify-content-evenly align-items-start w-100 footer-child">
-                            <ul class="footer-list">
-                                <li class="title mb-3">CONTACTO</li>
-                                <li class="mb-1">
-                                    <div class="d-flex justify-content-start align-items-center icon-text">
-                                        <img src="/img/svg/mail.svg" alt="" class="img-fluid">
-                                        <p class="mb-0 ml-1">alexxdevss@gmail.com</p>
-                                    </div>
-                                </li>
-                                <li class="mb-1">
-                                    <div class="d-flex justify-content-start align-items-center icon-text">
-                                        <img src="/img/svg/phone.svg" alt="" class="img-fluid">
-                                        <p class="mb-0 ml-1">625 128 986</p>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="footer-list">
-                                <li class="title mb-3">LOPD</li>
-                                <li class="mb-1"><a href="/cookies" target="_blank">Cookies</a></li>
-                                <li class="mb-1"><a href="/legality" target="_blank">Aviso legal</a></li>
-                                <li class="mb-1"><a href="/privacity" target="_blank">Política de privacidad</a></li>
-                            </ul>
-                        </div>
+                        <ul class="footer-list">
+                            <li class="title mb-3">CONTENIDO</li>
+                            <li class="mb-1"><a href="/">Home</a></li>
+                            <li class="mb-1"><a href="/services">Servicios</a></li>
+                            <li class="mb-1"><a href="/projects">Proyectos</a></li>
+                            <li class="mb-1"><a href="/about">Sobre mí</a></li>
+                            <li class="mb-1"><a href="/contact">Contacto</a></li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li class="title mb-3">CONTACTO</li>
+                            <li class="mb-1">
+                                <div class="d-flex justify-content-start align-items-center icon-text">
+                                    <img src="/img/svg/mail.svg" alt="" class="img-fluid">
+                                    <p class="mb-0 ml-1">alexxdevss@gmail.com</p>
+                                </div>
+                            </li>
+                            <li class="mb-1">
+                                <div class="d-flex justify-content-start align-items-center icon-text">
+                                    <img src="/img/svg/phone.svg" alt="" class="img-fluid">
+                                    <p class="mb-0 ml-1">625 128 986</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li class="title mb-3">LOPD</li>
+                            <li class="mb-1"><a href="/cookies" target="_blank">Cookies</a></li>
+                            <li class="mb-1"><a href="/legality" target="_blank">Aviso legal</a></li>
+                            <li class="mb-1"><a href="/privacity" target="_blank">Política de privacidad</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

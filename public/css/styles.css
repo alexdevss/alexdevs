@@ -380,8 +380,6 @@ header{
     height: 25px;
 }
 
-
-
 /* SERVICES STYLES */
 
 .white-box{
@@ -977,6 +975,14 @@ header{
         left: calc(0% - 20px);
         top: calc(0% - 20px);
     }
+
+    
+    .footer-box{
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+
     /* SERVICES STYLES  */
     .recomended{
         display: none !important;
