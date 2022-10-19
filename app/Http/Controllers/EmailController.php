@@ -11,8 +11,6 @@ use Illuminate\Support\Facades\Mail;
 class EmailController extends Controller
 {
     function sendEmail (Request $request) {
-        Log::debug('------------ SENDING EMAIL -------------------');
-        Log::debug($request);
         $formData = request_to_array($request);
         if(!empty_request($formData)){
             $ip = $request->ip();
@@ -21,10 +19,7 @@ class EmailController extends Controller
             return redirect('/awfulMessage');
         }
         
-        Log::debug(Config::get('constants.mail.subject.to_client'));
-        Log::debug(Config::get('constants.mail.view.to_client'));
         Mail::to($formData['email'])->send(new NotifyMail(Config::get('constants.mail.subject.to_client'), $formData, Config::get('constants.mail.view.to_client')));
-        Log::debug('first send');
         if(Mail::failures()){
             return redirect()->route('/contact', false);
         } else {
