@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 
 if(! function_exists("check_empty_request")){
-    function check_empty_request($requestData){
+    function empty_request($requestData){
         foreach ($requestData as $data) {
             if(empty($data) || is_null($data)) return false;
         }
