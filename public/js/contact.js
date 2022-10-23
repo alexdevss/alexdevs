@@ -19,3 +19,20 @@ $("#contactForm").on("submit", function(e){
     }
 
 })
+
+function successCallback(token){
+    // TODO: Fix CORS problems
+    // Look for solution to accesible vars
+    const baseUrl = 'https://www.google.com/recaptcha/api/siteverify'
+    const key = '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
+    const url = `${baseUrl}?secret=${key}&response=${token}`
+
+    $.ajax(url, 
+    {
+        method: 'POST',
+        success: function (data, status, xhr) {
+            console.log(data)
+    }
+});
+
+}
