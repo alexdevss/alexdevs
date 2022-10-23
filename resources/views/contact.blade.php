@@ -44,6 +44,7 @@
                                href="/privacity" target="_blank" class="standard-link">política de privacidad</a>
                         </label>
                     </div>
+                    <div class="g-recaptcha" data-sitekey={{env('RECAPTCHA_KEY')}}></div>
                     <div class="d-flex justify-content-center align-items-center">
                         <a href="#" id="contactBtn" class="button rounded-pill px-5 py-2 mt-4 animation">
                             Enviar
@@ -78,5 +79,6 @@
 
 @endsection
 @section('resources')
-<script src="/js/contact.js"></script>
+<script src=" /js/contact.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 @endsection
