@@ -36,9 +36,7 @@ Route::middleware('cache.headers:public;max_age=31536000;etag')->group(function 
             Log::debug('ERROR');
         }
 
-        $captcha_response = Http::withOptions([
-            'ssl_key' => ['C:/dev/rootSSL.pem', 'privatekey.key']
-        ])->post($request['url']);
+        $captcha_response = Http::post($request['url']);
         Log::debug($captcha_response);
 
     });
