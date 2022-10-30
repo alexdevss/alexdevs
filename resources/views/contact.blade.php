@@ -45,7 +45,7 @@
                         </label>
                     </div>
                     <div class="g-recaptcha" id='divReCaptcha'></div>
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="justify-content-center align-items-center d-none" id="container-btn">
                         <a href="#" id="contactBtn" class="button rounded-pill px-5 py-2 mt-4 animation">
                             Enviar
                         </a>
@@ -63,17 +63,17 @@
 
 <script>
     $(document).ready(function(){
-    $('body').bind('cut copy paste', function(event) {
-        event.preventDefault();
-    });
-    @if ($sended == "1" && $sended != null)
-        $(".response-box").addClass('alert-success')
-        $(".response-box").html("Mensaje enviado correctamente.")
-    @elseif ($sended == "0" && $sended != null)
-        $(".response-box").addClass('alert-danger')
-        $(".response-box").html("Ha ocurrido un error. Inténtelo más tarde")
-    @endif
-    $(".response-box").removeClass('hide')
+        $('body').bind('cut copy paste', function(event) {
+            event.preventDefault();
+        });
+        @if ($sended == "1" && $sended != null)
+            $(".response-box").addClass('alert-success')
+            $(".response-box").html("Mensaje enviado correctamente.")
+        @elseif ($sended == "0" && $sended != null)
+            $(".response-box").addClass('alert-danger')
+            $(".response-box").html("Ha ocurrido un error. Inténtelo más tarde")
+        @endif
+        $(".response-box").removeClass('hide')
 })
 </script>
 
@@ -93,9 +93,12 @@
                 _token: $("input[name='_token']").val()
             },
             success: function (data, status, xhr) {
-                console.log(data)
-                console.log(xhr)
-                console.log(status)
+                if(data.succes){
+                    if($("#container-btn").hasClass('d-none')){
+                        $("#container-btn").removeClass('d-none')  
+                        $("#container-btn").addClass('d-flex')  
+                    }
+                }
             }
         });
     
