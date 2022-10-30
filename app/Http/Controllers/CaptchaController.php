@@ -14,10 +14,10 @@ class CaptchaController extends Controller
     function verify(Request $request){
         $form_data = request_to_array($request);
         if(empty_request($form_data)){
-            Log::debug('ERROR');
+            return json_encode(['success' => false]);
         }
 
-        $url = Config::get('captcha_url') . "?secret=" . env('RECAPTCHA_SECRET_KEY') . "&response=" . $request['token'];
+        $url = Config::get('constants.captcha_url') . "?secret=" . env('RECAPTCHA_SECRET_KEY') . "&response=" . $request['token'];
         
         Log::debug("-------------------------- URL CAPTCHA -----------------------------");
         Log::debug($url);
