@@ -38,7 +38,7 @@ Route::middleware('cache.headers:public;max_age=31536000;etag')->group(function 
 
         $url = Config::get('captcha.verify_url') . "?secret=" . env('RECAPTCHA_SECRET_KEY') . "&response=" . $request['token'];
 
-        $response = Http::post($url);
+        $response = Http::withHeaders('Access-Control-Allow-Origin', '*')->post($url);
 
         return json_encode(['success' => true, 'response' => $response]);
 
