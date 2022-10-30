@@ -17,7 +17,7 @@ class CaptchaController extends Controller
             Log::debug('ERROR');
         }
 
-        $url = Config::get('captcha.verify_url') . "?secret=" . env('RECAPTCHA_SECRET_KEY') . "&response=" . $request['token'];
+        $url = Config::get('captcha_url') . "?secret=" . env('RECAPTCHA_SECRET_KEY') . "&response=" . $request['token'];
         
         Log::debug("-------------------------- URL CAPTCHA -----------------------------");
         Log::debug($url);
