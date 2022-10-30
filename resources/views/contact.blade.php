@@ -93,6 +93,7 @@
                 _token: $("input[name='_token']").val()
             },
             success: function (data) {
+                console.log(data)
                 if(data.success){
                     if($("#container-btn").hasClass('d-none')){
                         $("#container-btn").removeClass('d-none')  
