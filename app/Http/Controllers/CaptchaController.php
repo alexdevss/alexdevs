@@ -22,11 +22,11 @@ class CaptchaController extends Controller
         Log::debug('---------------------------------------- RESPONSE -------------------------------------------');
         Log::debug($response);
         Log::debug($response['success']);
-        if($response['success'] == "0"){
+        if(!$response['success']){
             return json_encode(['success' => false]);
         }
 
-        return json_encode(['success' => false]);
+        return json_encode(['success' => true]);
 
     }
 }
