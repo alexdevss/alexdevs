@@ -92,8 +92,9 @@
                 token: token,
                 _token: $("input[name='_token']").val()
             },
+            dataType: 'json',
             success: function (data) {
-                data = JSON.parse(data)
+                // data = JSON.parse(data)
                 if(data.success){
                     if($("#container-btn").hasClass('d-none')){
                         $("#container-btn").removeClass('d-none')  
