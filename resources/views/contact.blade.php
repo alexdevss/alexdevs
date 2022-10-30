@@ -102,7 +102,7 @@
     }
     function onLoadCallback () {
         grecaptcha.render('divReCaptcha', {
-            sitekey: '{{env('RECAPTCHA_KEY')}}',
+            sitekey: '{{env('RECAPTCHA_PUBLIC_KEY')}}',
             callback: successCallback,
         })
     }
