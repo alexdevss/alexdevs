@@ -1,2 +1,7 @@
+User-agent: Googlebot
+Allow: /
+
 User-agent: *
-Disallow:
+Disallow: /
+
+Sitemap: http://www.alexdevs.es/sitemap.xml

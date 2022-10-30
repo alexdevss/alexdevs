@@ -19,6 +19,7 @@
                 'personal_data' => 'No almacena información personal'
             ]
             ],
-        'badIps' => []
+        'badIps' => [],
+        'captcha_url' => 'https://www.google.com/recaptcha/api/siteverify' 
     ];
 ?>

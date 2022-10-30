@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Controllers\CaptchaController;
 use App\Http\Controllers\EmailController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
@@ -26,8 +29,10 @@ Route::middleware('cache.headers:public;max_age=31536000;etag')->group(function 
     Route::get('/privacity', function () {return view('privacity');});
     Route::get('/cookies', function () {return view('cookies')->with('cookies', Config::get('constants.cookies'));});
     
-    // Mail routes
+    // Mail route
     Route::post('/sendEmail', [EmailController::class, 'sendEmail']);
-    Route::get('/test', function(){return phpinfo();});
+
+    // Captcha route
+    Route::post('/captcha', [CaptchaController::class, 'verify']);
 
 });

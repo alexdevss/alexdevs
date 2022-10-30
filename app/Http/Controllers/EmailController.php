@@ -12,7 +12,7 @@ class EmailController extends Controller
 {
     function sendEmail (Request $request) {
         $formData = request_to_array($request);
-        if(!empty_request($formData)){
+        if(empty_request($formData)){
             $ip = $request->ip();
             Config::set('constants.badIps', $ip);
             Mail::to(env('MAIL_MY_EMAIL'))->send(new NotifyMail(Config::get('constants.mail.subject.to_me_spy'), $formData, Config::get('constants.mail.view.to_me_spy'), $ip));

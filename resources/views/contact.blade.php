@@ -44,7 +44,8 @@
                                href="/privacity" target="_blank" class="standard-link">política de privacidad</a>
                         </label>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center">
+                    <div class="g-recaptcha" id='divReCaptcha'></div>
+                    <div class="justify-content-center align-items-center d-none" id="container-btn">
                         <a href="#" id="contactBtn" class="button rounded-pill px-5 py-2 mt-4 animation">
                             Enviar
                         </a>
@@ -62,21 +63,50 @@
 
 <script>
     $(document).ready(function(){
-    $('body').bind('cut copy paste', function(event) {
-        event.preventDefault();
-    });
-    @if ($sended == "1" && $sended != null)
-        $(".response-box").addClass('alert-success')
-        $(".response-box").html("Mensaje enviado correctamente.")
-    @elseif ($sended == "0" && $sended != null)
-        $(".response-box").addClass('alert-danger')
-        $(".response-box").html("Ha ocurrido un error. Inténtelo más tarde")
-    @endif
-    $(".response-box").removeClass('hide')
+        $('body').bind('cut copy paste', function(event) {
+            event.preventDefault();
+        });
+        @if ($sended == "1" && $sended != null)
+            $(".response-box").addClass('alert-success')
+            $(".response-box").html("Mensaje enviado correctamente.")
+        @elseif ($sended == "0" && $sended != null)
+            $(".response-box").addClass('alert-danger')
+            $(".response-box").html("Ha ocurrido un error. Inténtelo más tarde")
+        @endif
+        $(".response-box").removeClass('hide')
 })
 </script>
 
 @endsection
 @section('resources')
 <script src="/js/contact.js"></script>
+<script>
+    function successCallback(token){    
+        $.ajax('/captcha', 
+        {
+            method: 'POST',
+            data: {
+                token: token,
+                _token: $("input[name='_token']").val()
+            },
+            dataType: 'json',
+            success: function (data) {
+                if(data.success){
+                    if($("#container-btn").hasClass('d-none')){
+                        $("#container-btn").removeClass('d-none')  
+                        $("#container-btn").addClass('d-flex')  
+                    }
+                }
+            }
+        });
+    
+    }
+    function onLoadCallback () {
+        grecaptcha.render('divReCaptcha', {
+            sitekey: '{{env('RECAPTCHA_PUBLIC_KEY')}}',
+            callback: successCallback,
+        })
+    }
+</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onLoadCallback&render=explicit"></script>
 @endsection
