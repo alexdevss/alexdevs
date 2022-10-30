@@ -79,27 +79,8 @@
 
 @endsection
 @section('resources')
-<script src=" /js/contact.js"></script>
+<script src="/js/contact.js"></script>
 <script>
-    function successCallback(token){
-        // TODO: Fix CORS problems
-        // Look for solution to accesible vars
-    
-        $.ajax(url, 
-        {
-            method: 'POST',
-            data: {
-                token: token,
-                _token: $("input[name='_token']").val()
-            },
-            success: function (data, status, xhr) {
-                console.log(data)
-                console.log(xhr)
-                console.log(status)
-            }
-        });
-    
-    }
     function onLoadCallback () {
         grecaptcha.render('divReCaptcha', {
             sitekey: '{{env('RECAPTCHA_PUBLIC_KEY')}}',
