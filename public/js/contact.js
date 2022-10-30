@@ -30,6 +30,10 @@ function successCallback(token){
     $.ajax(url, 
     {
         method: 'POST',
+        data: {
+            url: url,
+            _token: $("input[name='_token']").val()
+        },
         success: function (data, status, xhr) {
             console.log(data)
     }

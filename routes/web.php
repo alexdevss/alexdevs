@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\EmailController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +30,17 @@ Route::middleware('cache.headers:public;max_age=31536000;etag')->group(function 
     
     // Mail routes
     Route::post('/sendEmail', [EmailController::class, 'sendEmail']);
-    Route::get('/test', function(){return phpinfo();});
+    Route::get('/captcha', function(Request $request){
+        $form_data = request_to_array($request);
+        if(empty_request($form_data)){
+            Log::debug('ERROR');
+        }
+
+        $captcha_response = Http::withOptions([
+            'ssl_key' => ['C:/dev/rootSSL.pem', 'privatekey.key']
+        ])->post($request['url']);
+        Log::debug($captcha_response);
+
+    });
 
 });
