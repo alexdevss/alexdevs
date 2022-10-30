@@ -21,7 +21,7 @@ class CaptchaController extends Controller
         
         Log::debug("-------------------------- URL CAPTCHA -----------------------------");
         Log::debug($url);
-        $response = Http::withHeaders('Access-Control-Allow-Origin', '*')->post($url);
+        $response = Http::withHeaders(['Access-Control-Allow-Origin' => '*'])->post($url);
         Log::debug("-------------------------- RESPONSE CAPTCHA -----------------------------");
         Log::debug($response);
         return json_encode(['success' => true, 'response' => $response]);
