@@ -81,12 +81,32 @@
 @section('resources')
 <script src=" /js/contact.js"></script>
 <script>
+    function successCallback(token){
+        // TODO: Fix CORS problems
+        // Look for solution to accesible vars
+        const baseUrl = 'https://www.google.com/recaptcha/api/siteverify'
+        const key = "{{env('RECAPTCHA_KEY')}}"
+        const url = `${baseUrl}?secret=${key}&response=${token}`
+    
+        $.ajax(url, 
+        {
+            method: 'POST',
+            data: {
+                url: url,
+                _token: $("input[name='_token']").val()
+            },
+            success: function (data, status, xhr) {
+                console.log(data)
+            }
+        });
+    
+    }
     function onLoadCallback () {
-    grecaptcha.render('divReCaptcha', {
-        sitekey: '{{env('RECAPTCHA_KEY')}}',
-        callback: successCallback,
-    })
-}
+        grecaptcha.render('divReCaptcha', {
+            sitekey: '{{env('RECAPTCHA_KEY')}}',
+            callback: successCallback,
+        })
+    }
 </script>
 <script src="https://www.google.com/recaptcha/api.js?onload=onLoadCallback&render=explicit"></script>
 @endsection
