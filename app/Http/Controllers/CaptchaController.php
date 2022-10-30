@@ -19,9 +19,7 @@ class CaptchaController extends Controller
 
         $url = Config::get('constants.captcha_url') . "?secret=" . env('RECAPTCHA_SECRET_KEY') . "&response=" . $request['token'];
         $response = json_decode(Http::post($url), true);
-        Log::debug('---------------------------------------- RESPONSE -------------------------------------------');
-        Log::debug($response);
-        Log::debug($response['success']);
+
         if(!$response['success']){
             return json_encode(['success' => false]);
         }
