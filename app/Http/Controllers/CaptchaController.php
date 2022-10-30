@@ -18,13 +18,13 @@ class CaptchaController extends Controller
         }
 
         $url = Config::get('constants.captcha_url') . "?secret=" . env('RECAPTCHA_SECRET_KEY') . "&response=" . $request['token'];
-        
-        Log::debug("-------------------------- URL CAPTCHA -----------------------------");
-        Log::debug($url);
         $response = Http::post($url);
-        Log::debug("-------------------------- RESPONSE CAPTCHA -----------------------------");
-        Log::debug($response);
-        return json_encode(['success' => true, 'response' => $response]);
+        
+        if(!$response->success){
+            return json_encode(['success' => false]);
+        }
+
+        return json_encode(['success' => false]);
 
     }
 }
