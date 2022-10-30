@@ -84,19 +84,18 @@
     function successCallback(token){
         // TODO: Fix CORS problems
         // Look for solution to accesible vars
-        const baseUrl = 'https://www.google.com/recaptcha/api/siteverify'
-        const key = "{{env('RECAPTCHA_KEY')}}"
-        const url = `${baseUrl}?secret=${key}&response=${token}`
     
         $.ajax(url, 
         {
             method: 'POST',
             data: {
-                url: url,
+                token: token,
                 _token: $("input[name='_token']").val()
             },
             success: function (data, status, xhr) {
                 console.log(data)
+                console.log(xhr)
+                console.log(status)
             }
         });
     

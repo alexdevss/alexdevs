@@ -36,8 +36,11 @@ Route::middleware('cache.headers:public;max_age=31536000;etag')->group(function 
             Log::debug('ERROR');
         }
 
-        $captcha_response = Http::post($request['url']);
-        Log::debug($captcha_response);
+        $url = Config::get('captcha.verify_url') . "?secret=" . env('RECAPTCHA_SECRET_KEY') . "&response=" . $request['token'];
+
+        $response = Http::post($url);
+
+        return json_encode(['success' => true, 'response' => $response]);
 
     });
 
