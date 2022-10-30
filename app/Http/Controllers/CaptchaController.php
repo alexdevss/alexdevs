@@ -6,9 +6,6 @@ use App\Mail\NotifyMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Mail;
-
 class CaptchaController extends Controller
 {
     function verify(Request $request){

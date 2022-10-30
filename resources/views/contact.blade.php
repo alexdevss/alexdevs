@@ -81,10 +81,7 @@
 @section('resources')
 <script src="/js/contact.js"></script>
 <script>
-    function successCallback(token){
-        // TODO: Fix CORS problems
-        // Look for solution to accesible vars
-    
+    function successCallback(token){    
         $.ajax('/captcha', 
         {
             method: 'POST',
@@ -94,7 +91,6 @@
             },
             dataType: 'json',
             success: function (data) {
-                // data = JSON.parse(data)
                 if(data.success){
                     if($("#container-btn").hasClass('d-none')){
                         $("#container-btn").removeClass('d-none')  
