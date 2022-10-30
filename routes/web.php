@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CaptchaController;
 use App\Http\Controllers\EmailController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
@@ -28,23 +29,10 @@ Route::middleware('cache.headers:public;max_age=31536000;etag')->group(function 
     Route::get('/privacity', function () {return view('privacity');});
     Route::get('/cookies', function () {return view('cookies')->with('cookies', Config::get('constants.cookies'));});
     
-    // Mail routes
+    // Mail route
     Route::post('/sendEmail', [EmailController::class, 'sendEmail']);
-    Route::get('/captcha', function(Request $request){
-        $form_data = request_to_array($request);
-        if(empty_request($form_data)){
-            Log::debug('ERROR');
-        }
 
-        $url = Config::get('captcha.verify_url') . "?secret=" . env('RECAPTCHA_SECRET_KEY') . "&response=" . $request['token'];
-        
-        Log::debug("-------------------------- URL CAPTCHA -----------------------------");
-        Log::debug($url);
-        $response = Http::withHeaders('Access-Control-Allow-Origin', '*')->post($url);
-        Log::debug("-------------------------- RESPONSE CAPTCHA -----------------------------");
-        Log::debug($response);
-        return json_encode(['success' => true, 'response' => $response]);
-
-    });
+    // Captcha route
+    Route::post('/captcha', [CaptchaController::class, 'verify']);
 
 });
