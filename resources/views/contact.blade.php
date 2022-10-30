@@ -79,7 +79,6 @@
 
 @endsection
 @section('resources')
-<script src="/js/contact.js"></script>
 <script>
     function onLoadCallback () {
         grecaptcha.render('divReCaptcha', {
@@ -88,5 +87,6 @@
         })
     }
 </script>
+<script src="/js/contact.js"></script>
 <script src="https://www.google.com/recaptcha/api.js?onload=onLoadCallback&render=explicit"></script>
 @endsection
